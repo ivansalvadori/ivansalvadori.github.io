@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-06-19 sex 17:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Integração de aplicações entre servidores e dispositivos móveis</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Ivan Salvadori" />
+<meta name="description" content="Este artigo apresenta as principais formas de integração entre servidores e aplicações executadas dispositivos móveis. Primeiramente, é fundamental definir alguns conceitos básicos bem como especificar a motivação para integração neste cenário."
+ />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<meta name="docClass" content= "Artigo">
+<link rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
+
+<script type="text/javascript" src="../../HtmlTemplate/ccReport.js">
+/**
+ *
+ * @source: ../../HtmlTemplate/ccReport.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in ../../HtmlTemplate/ccReport.js.
+ *
+ * Copyright (C) 2012-2018 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in ../../HtmlTemplate/ccReport.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Integração de aplicações entre servidores e dispositivos móveis</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org9ce809c">1. Introdução</a></li>
+<li><a href="#org0e49ddb">2. Conceitos básicos</a></li>
+<li><a href="#org0f81b0c">3. Integração Síncrona</a></li>
+<li><a href="#orgc27421e">4. Integração Assíncrona</a></li>
+<li><a href="#org5ac32aa">5. Conclusão</a></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org9ce809c" class="outline-2">
+<h2 id="org9ce809c"><span class="section-number-2">1</span> Introdução</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Este artigo apresenta as principais formas de integração entre servidores e aplicações executadas dispositivos móveis. 
+Primeiramente, é fundamental definir alguns conceitos básicos bem como especificar a motivação para integração neste cenário.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org0e49ddb" class="outline-2">
+<h2 id="org0e49ddb"><span class="section-number-2">2</span> Conceitos básicos</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+O primeiro conceito a ser definido é o de servidor.
+A primeira vista, servidor pode ser entendido como sendo um recurso computacional destinado a execução de uma aplicação ou uma coleção de aplicações.
+No contexto de integração, é mais adequado definir o termo servidor como recurso de software ao invéz de recurso computacional ou hardware propriamente dito.
+Exemplos de servidores neste contexto podem ser: servidores de banco de dados, servidores de aplicações, servidores de arquivo, servidores de email, dentre outros.
+Todos estes exemplos possuem em comum uma camada de software responsável em realizar uma determinada tarefa específica.
+O termo servidor traz consigo a ideia de acessibilidade.
+Esta ideia refere-se à capacidade de elementos externos comunicarem-se com as aplicações disponibilizadas pelos servidores.
+De forma geral, pode-se caracterizar os elementos externos como aplicações.
+Tem-se então, um cenário onde aplicações comunicam-se entre sí para alcançar os seus objetivos desejados.
+A este processo de comunicação entre aplicações dá-se o nome de integração de aplicações.
+</p>
+
+<p>
+Diversas são as justificativas para integrar aplicações.
+Manter o software o mais coeso possível é um dos grandes motivadores para integração de aplicações.
+Uma aplicação é desenvolvida para executar um conjunto específico de funcionalidades a respeito de um determinado domínio.
+Dessa forma, é essencial isolar a aplicação de outras funcionalidades que não estão diretamente relacionadas com o domínio, mas que são necessárias para sua correta execução.
+Funcionalidades não relacionadas com o domínio da aplicação podem representar requisitos não funcionais, como por exemplo: envio de email, controle de acesso e segurança, persistência de dados, entre outros.
+Para essas funcionalidades, a aplicação pode estabelecer uma integração com servidores capazes de executar essas atividades.
+A reutilização de funcionalidades é outra justificativa para a integração de aplicações.
+Uma determinada aplicação pode reutilizar funcionalidades previamente implementadas por outras aplicações.
+Além disso, a simples necessidade de disponibilizar serviços ou dados para parceiros exige a adoção de abordagens de integração de aplicações.
+</p>
+
+<p>
+As justificativas anteriormente citadas se aplicam a qualquer tipo de aplicação, seja a aplicação desenvolvida para ser executada em um dispositivo móvel ou não.
+Entretanto, aplicações para dispositivos móveis possuem características específicas que motivam ainda  mais a realização de integração com servidores.
+Embora os dispositivos móveis atuais possuírem recursos computacionais avançados, como por exemplo: processador, memória e capacidade de armazenamento, ainda assim apresentam limitações.
+Muitas técnicas de desenvolvimento de interfaces adaptativas são utilizadas para oferecer uma melhor experiência ao usuário.
+Entretanto, quando comparadas com computadores pessoais ou laptops, os celulares tem a desvantagem do tamanho de tela para apresentar a interface gráfica do usuário.
+Por esse motivo, é comum a implementação parcial de funcionalidades em aplicações para dispositivos móveis.
+Usuários desejam independência para utilizar suas aplicações.
+Quando as funcionalidades de uma aplicação são disponibilizadas através de diferentes meios, os usuários podem escolher a maneira mais adequada para diferentes situações.
+Aplicações desenvolvidas para computadores pessoais podem ter versões adaptadas para dispositivos móveis.
+Usuários desejam compartilhar informações e colaborar com outros usuários.
+Para isso, as aplicações necessitam de um suporte de servidores que agem como ponto central de armazenamento de dados.
+</p>
+
+<p>
+Dispositivos móveis não necessáriamente são celulares ou tablets.
+Aplicações podem ser executadas em uma variedade de dispositivos sensores que monitoram variáveis ambientais ou outros dispositivos.
+Dispositivos sensores podem ser instalados em automóveis, aviões, e na construção das chamadas cidades inteligentes. 
+Dessa forma, para superar eventuais limitações de hardware, oferecer independência de uso, permitir o compartilhamento e colaboração entre os usuários, é necessário integração de aplicações.
+A integração de aplicações pode ser realizada de diversas formas, que variam especialmente quanto a forma de acesso às funcionalidades.
+Neste texto, são consideradas as integrações síncronas e assíncronas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0f81b0c" class="outline-2">
+<h2 id="org0f81b0c"><span class="section-number-2">3</span> Integração Síncrona</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Na integração síncrona, uma aplicação cliente envia uma requisição para um servidor e aguarda uma resposta acerca da funcionalidade desejada.
+A ideia de sincronismo reside no fato da aplicação cliente aguardar uma resposta do servidor para continuar seu fluxo de processamento.
+Uma requisição pode ter diferentes respostas.
+O servidor pode recusar ou desconhecer os dados enviados pelo cliente.
+Outro possivel resultado pode representar erro de execução no lado servidor ou até mesmo não responder no tempo determinado pelo cliente.
+Independetemente da resposta, o cliente fica aguardando até que uma resposta seja produzida.
+</p>
+
+<p>
+A computação orientada a serviços é uma das formas mais utilizadas para implementar a integração sícrona entre aplicativos.
+A computação orientada a serviços é um paradigma de computação que utiliza serviços de software como elementos fundamentais para o desenvolvimento e implantação de aplicativos de software distribuídos. 
+Serviços são elementos computacionais independentes de plataforma que executam funções de um determinado processo de negócio.
+Ou seja, de acordo com o domínio para o qual é fornecido, um serviço deve representar uma funcionalidade independente que corresponde a uma atividade do mundo real.
+Na prática, funcionalidades são implementadas na forma de serviços web que expõem seus recursos de forma programática pela internet atravéz de protocolos padronizados.
+</p>
+
+
+<p>
+Existem duas abordagens para implementar Web Services: SOAP e APIs Web RESTful.
+SOAP
+Foco em integraçao entre aplicações servidores
+ESB
+Padroes XML nao tao confortaveis para apps Web
+</p>
+
+
+<p>
+REST&#x2026;.
+</p>
+
+<p>
+Integração com APIs públicas
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc27421e" class="outline-2">
+<h2 id="orgc27421e"><span class="section-number-2">4</span> Integração Assíncrona</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+desenvolver aplicações web que precisem de comunicação bidirecional entre cliente e servidor, era significado de um abuso
+do protocolo HTTP, devido às incessantes requisições ao servidor web para
+verificar se havia algum dado novo
+</p>
+
+<p>
+A API WebSocket fornece um protocolo de comunicação full-duplex e bidirecional através um uma única conexão TCP. Full-duplex significa que um cliente e um servidor podem enviar mensagens independentes um dos outros. O conceito de bidirecional significa que um cliente pode enviar uma mensagem para um servidor e vice versa.
+</p>
+
+<p>
+Assim sendo, o protocolo WebSocket muda a forma como os servidores web lidam com as requisições de seus clientes, pois ao invés de encerrar a conexão, o servidor devolve um status 101 e mantém a conexão aberta para que ele ou o cliente possam enviar novas mensagens no fluxo de comunicação.
+</p>
+
+
+<p>
+Filas e tópics
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org5ac32aa" class="outline-2">
+<h2 id="org5ac32aa"><span class="section-number-2">5</span> Conclusão</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Aplicações móveis desenvolvidas com tecnologias Web -&gt; integração via Web service.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 04/06/2020</p>
+<p class="author">Author: Ivan Salvadori</p>
+<p class="date">Created: 2020-06-19 sex 17:02</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

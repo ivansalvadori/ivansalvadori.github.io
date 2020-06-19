@@ -1,0 +1,106 @@
+#+TITLE: Integração de aplicações entre servidores e dispositivos móveis
+#+AUTHOR: Ivan Salvadori
+#+EMAIL: Your email address
+#+DATE: 04/06/2020
+#+DESCRIPTION: Este artigo apresenta as principais formas de integração entre servidores e aplicações executadas dispositivos móveis. Primeiramente, é fundamental definir alguns conceitos básicos bem como especificar a motivação para integração neste cenário.
+
+#+HTML_HEAD: <meta name="docClass" content= "Artigo"> 
+
+
+#+INFOJS_OPT: path:../../HtmlTemplate/ccReport.js
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
+
+
+#+TODO: TODO(t) STARTED(s) WAITING(w) | DONE(d) CANCELED(c)
+ 
+
+
+* Introdução
+Este artigo apresenta as principais formas de integração entre servidores e aplicações executadas dispositivos móveis. 
+Primeiramente, é fundamental definir alguns conceitos básicos bem como especificar a motivação para integração neste cenário.
+
+
+* Conceitos básicos 
+O primeiro conceito a ser definido é o de servidor.
+A primeira vista, servidor pode ser entendido como sendo um recurso computacional destinado a execução de uma aplicação ou uma coleção de aplicações.
+No contexto de integração, é mais adequado definir o termo servidor como recurso de software ao invéz de recurso computacional ou hardware propriamente dito.
+Exemplos de servidores neste contexto podem ser: servidores de banco de dados, servidores de aplicações, servidores de arquivo, servidores de email, dentre outros.
+Todos estes exemplos possuem em comum uma camada de software responsável em realizar uma determinada tarefa específica.
+O termo servidor traz consigo a ideia de acessibilidade.
+Esta ideia refere-se à capacidade de elementos externos comunicarem-se com as aplicações disponibilizadas pelos servidores.
+De forma geral, pode-se caracterizar os elementos externos como aplicações.
+Tem-se então, um cenário onde aplicações comunicam-se entre sí para alcançar os seus objetivos desejados.
+A este processo de comunicação entre aplicações dá-se o nome de integração de aplicações.
+
+Diversas são as justificativas para integrar aplicações.
+Manter o software o mais coeso possível é um dos grandes motivadores para integração de aplicações.
+Uma aplicação é desenvolvida para executar um conjunto específico de funcionalidades a respeito de um determinado domínio.
+Dessa forma, é essencial isolar a aplicação de outras funcionalidades que não estão diretamente relacionadas com o domínio, mas que são necessárias para sua correta execução.
+Funcionalidades não relacionadas com o domínio da aplicação podem representar requisitos não funcionais, como por exemplo: envio de email, controle de acesso e segurança, persistência de dados, entre outros.
+Para essas funcionalidades, a aplicação pode estabelecer uma integração com servidores capazes de executar essas atividades.
+A reutilização de funcionalidades é outra justificativa para a integração de aplicações.
+Uma determinada aplicação pode reutilizar funcionalidades previamente implementadas por outras aplicações.
+Além disso, a simples necessidade de disponibilizar serviços ou dados para parceiros exige a adoção de abordagens de integração de aplicações.
+
+As justificativas anteriormente citadas se aplicam a qualquer tipo de aplicação, seja a aplicação desenvolvida para ser executada em um dispositivo móvel ou não.
+Entretanto, aplicações para dispositivos móveis possuem características específicas que motivam ainda  mais a realização de integração com servidores.
+Embora os dispositivos móveis atuais possuírem recursos computacionais avançados, como por exemplo: processador, memória e capacidade de armazenamento, ainda assim apresentam limitações.
+Muitas técnicas de desenvolvimento de interfaces adaptativas são utilizadas para oferecer uma melhor experiência ao usuário.
+Entretanto, quando comparadas com computadores pessoais ou laptops, os celulares tem a desvantagem do tamanho de tela para apresentar a interface gráfica do usuário.
+Por esse motivo, é comum a implementação parcial de funcionalidades em aplicações para dispositivos móveis.
+Usuários desejam independência para utilizar suas aplicações.
+Quando as funcionalidades de uma aplicação são disponibilizadas através de diferentes meios, os usuários podem escolher a maneira mais adequada para diferentes situações.
+Aplicações desenvolvidas para computadores pessoais podem ter versões adaptadas para dispositivos móveis.
+Usuários desejam compartilhar informações e colaborar com outros usuários.
+Para isso, as aplicações necessitam de um suporte de servidores que agem como ponto central de armazenamento de dados.
+
+Dispositivos móveis não necessáriamente são celulares ou tablets.
+Aplicações podem ser executadas em uma variedade de dispositivos sensores que monitoram variáveis ambientais ou outros dispositivos.
+Dispositivos sensores podem ser instalados em automóveis, aviões, e na construção das chamadas cidades inteligentes. 
+Dessa forma, para superar eventuais limitações de hardware, oferecer independência de uso, permitir o compartilhamento e colaboração entre os usuários, é necessário integração de aplicações.
+A integração de aplicações pode ser realizada de diversas formas, que variam especialmente quanto a forma de acesso às funcionalidades.
+Neste texto, são consideradas as integrações síncronas e assíncronas.
+
+* Integração Síncrona
+Na integração síncrona, uma aplicação cliente envia uma requisição para um servidor e aguarda uma resposta acerca da funcionalidade desejada.
+A ideia de sincronismo reside no fato da aplicação cliente aguardar uma resposta do servidor para continuar seu fluxo de processamento.
+Uma requisição pode ter diferentes respostas.
+O servidor pode recusar ou desconhecer os dados enviados pelo cliente.
+Outro possivel resultado pode representar erro de execução no lado servidor ou até mesmo não responder no tempo determinado pelo cliente.
+Independetemente da resposta, o cliente fica aguardando até que uma resposta seja produzida.
+
+A computação orientada a serviços é uma das formas mais utilizadas para implementar a integração sícrona entre aplicativos.
+A computação orientada a serviços é um paradigma de computação que utiliza serviços de software como elementos fundamentais para o desenvolvimento e implantação de aplicativos de software distribuídos. 
+Serviços são elementos computacionais independentes de plataforma que executam funções de um determinado processo de negócio.
+Ou seja, de acordo com o domínio para o qual é fornecido, um serviço deve representar uma funcionalidade independente que corresponde a uma atividade do mundo real.
+Na prática, funcionalidades são implementadas na forma de serviços web que expõem seus recursos de forma programática pela internet atravéz de protocolos padronizados.
+
+
+Existem duas abordagens para implementar Web Services: SOAP e APIs Web RESTful.
+SOAP
+Foco em integraçao entre aplicações servidores
+ESB
+Padroes XML nao tao confortaveis para apps Web
+
+
+REST....
+
+Integração com APIs públicas
+
+* Integração Assíncrona
+
+desenvolver aplicações web que precisem de comunicação bidirecional entre cliente e servidor, era significado de um abuso
+do protocolo HTTP, devido às incessantes requisições ao servidor web para
+verificar se havia algum dado novo
+
+A API WebSocket fornece um protocolo de comunicação full-duplex e bidirecional através um uma única conexão TCP. Full-duplex significa que um cliente e um servidor podem enviar mensagens independentes um dos outros. O conceito de bidirecional significa que um cliente pode enviar uma mensagem para um servidor e vice versa.
+
+Assim sendo, o protocolo WebSocket muda a forma como os servidores web lidam com as requisições de seus clientes, pois ao invés de encerrar a conexão, o servidor devolve um status 101 e mantém a conexão aberta para que ele ou o cliente possam enviar novas mensagens no fluxo de comunicação.
+
+
+Filas e tópics
+
+
+* Conclusão
+
+Aplicações móveis desenvolvidas com tecnologias Web -> integração via Web service.
