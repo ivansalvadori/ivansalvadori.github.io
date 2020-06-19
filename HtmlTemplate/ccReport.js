@@ -8,7 +8,7 @@ $(document).ready(function() {
   //removeSpecialElemets();
   removeNotToSpecialElemets();
   putTodoTagsOnRight();
-  $("h1").before('<div class="headerDiv"><a id="headerLink" style="border-bottom: none; color:#cb4b16; visited:#cb4b16;" href="https://ivansalvadori.github.io/">salvadori.bitbucket.io</a></div> ')
+  $("h1").before('<div class="headerDiv"><a id="headerLink" style="border-bottom: none; color:#cb4b16; visited:#cb4b16;" href="https://ivansalvadori.github.io/">https://ivansalvadori.github.io/</a></div> ')
   $("h1").before('<div class="reportDiv">[Report]</div>')
   $(".reportDiv").after('<div class="changeFontSizeDiv"><a id="upFontSize" href="#" style=" border-bottom: none;">[+A]</a><a id="downFontSize" href="#" style=" border-bottom: none;">[-A]</a></div>');
 
