@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt_br" xml:lang="pt_br">
 <head>
-<!-- 2020-06-19 sex 17:02 -->
+<!-- 2020-06-22 seg 19:31 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Integração de aplicações entre servidores e dispositivos móveis</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Ivan Salvadori" />
-<meta name="description" content="Este artigo apresenta as principais formas de integração entre servidores e aplicações executadas dispositivos móveis. Primeiramente, é fundamental definir alguns conceitos básicos bem como especificar a motivação para integração neste cenário."
- />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -310,19 +308,25 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org9ce809c">1. Introdução</a></li>
-<li><a href="#org0e49ddb">2. Conceitos básicos</a></li>
-<li><a href="#org0f81b0c">3. Integração Síncrona</a></li>
-<li><a href="#orgc27421e">4. Integração Assíncrona</a></li>
-<li><a href="#org5ac32aa">5. Conclusão</a></li>
+<li><a href="#org7892675">1. Introdução</a></li>
+<li><a href="#orge97d85d">2. Conceitos básicos</a></li>
+<li><a href="#org557725c">3. Integração Síncrona</a></li>
+<li><a href="#org4de55e1">4. Integração Assíncrona</a></li>
+<li><a href="#org4d9ace3">5. Conclusão</a></li>
 </ul>
 </div>
 </div>
+<p>
+[<a href="artigo-en.html">English</a>] 
+</p>
+
+<p>
+Atenção, este documento está em desenvolvimento. 
+</p>
 
 
-
-<div id="outline-container-org9ce809c" class="outline-2">
-<h2 id="org9ce809c"><span class="section-number-2">1</span> Introdução</h2>
+<div id="outline-container-org7892675" class="outline-2">
+<h2 id="org7892675"><span class="section-number-2">1</span> Introdução</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Este artigo apresenta as principais formas de integração entre servidores e aplicações executadas dispositivos móveis. 
@@ -332,8 +336,8 @@ Primeiramente, é fundamental definir alguns conceitos básicos bem como especif
 </div>
 
 
-<div id="outline-container-org0e49ddb" class="outline-2">
-<h2 id="org0e49ddb"><span class="section-number-2">2</span> Conceitos básicos</h2>
+<div id="outline-container-orge97d85d" class="outline-2">
+<h2 id="orge97d85d"><span class="section-number-2">2</span> Conceitos básicos</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 O primeiro conceito a ser definido é o de servidor.
@@ -385,8 +389,8 @@ Neste texto, são consideradas as integrações síncronas e assíncronas.
 </div>
 </div>
 
-<div id="outline-container-org0f81b0c" class="outline-2">
-<h2 id="org0f81b0c"><span class="section-number-2">3</span> Integração Síncrona</h2>
+<div id="outline-container-org557725c" class="outline-2">
+<h2 id="org557725c"><span class="section-number-2">3</span> Integração Síncrona</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Na integração síncrona, uma aplicação cliente envia uma requisição para um servidor e aguarda uma resposta acerca da funcionalidade desejada.
@@ -407,8 +411,13 @@ Na prática, funcionalidades são implementadas na forma de serviços web que ex
 
 
 <p>
-Existem duas abordagens para implementar Web Services: SOAP e APIs Web RESTful.
-SOAP
+As abordagens mais utilizadas para implementar serviços Web são SOAP e APIs Web RESTful.
+SOAP é o modelo mais tradicional e amplamente utilizado por grandes organizações, além de ser um padrão recomendado pelo W3C. 
+No padrão SOAP, a comunicação é realizada através do envio de um envelope de dados pelo cliente para o serviço web. 
+O envelope é um documento no formato XML que carrega internamente o conteúdo da mensagem, e pode conter vários elementos opcionais, relacionados à infraestrutura, para lidar com as questões de segurança, roteamento, dentre outras propriedades.
+</p>
+
+<p>
 Foco em integraçao entre aplicações servidores
 ESB
 Padroes XML nao tao confortaveis para apps Web
@@ -416,17 +425,46 @@ Padroes XML nao tao confortaveis para apps Web
 
 
 <p>
-REST&#x2026;.
+REST é uma coleção de princípios e restrições arquiteturais para o desenvolvimento de aplicações distribuídas na Web.
+REST é uma abordagem leve para o desenvolvimento de Web Services, que busca simplicidade e baixo acoplamento.
+Recursos formam a base dos princípios REST e podem ser qualquer informação que se deseje tornar acessível a clientes remotos, e que são endereçados através de um identificador único, denominado URI (Uniform Resource Identifier ). 
+Recursos podem ser uma lista de filmes em cartaz em um cinema, comentários de um blog, uma página pessoal ou um perfil de um usuário de uma rede social, por exemplo.
+Uma das representações de recurso mais utilizadas em Web Services REST é o JSON. 
+JSON é uma forma textual de representação de dados estruturados em uma coleção de pares no formato de chave/valor.
 </p>
 
 <p>
-Integração com APIs públicas
+Um dos principais princípios arquiteturais REST é o estabelecimento de uma interface uniforme entre cliente e servidor. 
+O uso de uma interface uniforme proporciona uma arquitetura simplificada e desacoplada. Uma das formas para estabelecer uma interface uniforme é respeitar a semântica do protocolo utilizado pelo Web Service. 
+O HTTP é o protocolo mais utilizados em Web Services REST, e respeitar a semântica do protocolo significa utilizar adequadamente os seus verbos e códigos de mensagens. 
+</p>
+
+<p>
+Os verbos HTTP mais utilizados são:
+</p>
+<ul class="org-ul">
+<li>GET - Obter a representação de um recurso;</li>
+<li>POST - Criar um novo recurso;</li>
+<li>PUT - Alterar um recurso;</li>
+<li>DELETE - Remover um recurso.</li>
+</ul>
+
+<p>
+Espera-se que os significados dos verbos HTTP sejam respeitados, empregando o verbo adequado para cada ação, embora muitas implementações REST negligenciem esta restrição e utilizam GET para obter, criar, alterar e remover recursos, dentre outras combinações.
+Outra restrição imposta pelo REST é a correta utilização de códigos de status ou mensagens. 
+Todas as requisições tratadas pelo servidor recebem um código de status, que informa ao cliente o resultado da requisição.
+Requisições que resultam em sucesso devem retornar uma resposta com um dos códigos do grupo 2XX. Outro exemplo é quando o cliente faz uma requisição que não possui autorização, onde o código de resposta deve ser 401, indicando ao cliente que o erro é de autenticação inválida. Da mesma forma, quando ocorre algum erro interno do servidor, a resposta deve apresentar o erro 500. Os códigos de status do protocolo HTTP fornecem uma maneira adequada de categorizar e padronizar respostas das requisições, e os princípios REST pedem atenção neste aspecto.
+</p>
+
+<p>
+Outra restrição arquitetural exige que as requisições contenham todas as informações necessárias para sua execução, sem recorrer a dados armazenados em sessões do usuário. Não é esperado que o servidor mantenha dados na sessão do usuário, tornando a aplicação stateless.
+É responsabilidade da aplicação cliente manter o estado dos recursos para o usuário final, ficando o servidor com a responsabilidade de disponibilizar representações de recursos e alterar seus estados. O comportamento stateless implica que o servidor não deve manter nenhuma informação sobre as requisições realizadas. O envio de todas as informações necessárias para a execução das requisições, somado à utilização correta do protocolo utilizado pelo Web Service resulta em mensagens auto-descritivas, outro importante princípio arquitetural REST.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc27421e" class="outline-2">
-<h2 id="orgc27421e"><span class="section-number-2">4</span> Integração Assíncrona</h2>
+<div id="outline-container-org4de55e1" class="outline-2">
+<h2 id="org4de55e1"><span class="section-number-2">4</span> Integração Assíncrona</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 desenvolver aplicações web que precisem de comunicação bidirecional entre cliente e servidor, era significado de um abuso
@@ -450,8 +488,10 @@ Filas e tópics
 </div>
 
 
-<div id="outline-container-org5ac32aa" class="outline-2">
-<h2 id="org5ac32aa"><span class="section-number-2">5</span> Conclusão</h2>
+
+
+<div id="outline-container-org4d9ace3" class="outline-2">
+<h2 id="org4d9ace3"><span class="section-number-2">5</span> Conclusão</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Aplicações móveis desenvolvidas com tecnologias Web -&gt; integração via Web service.
@@ -462,7 +502,7 @@ Aplicações móveis desenvolvidas com tecnologias Web -&gt; integração via We
 <div id="postamble" class="status">
 <p class="date">Date: 04/06/2020</p>
 <p class="author">Author: Ivan Salvadori</p>
-<p class="date">Created: 2020-06-19 sex 17:02</p>
+<p class="date">Created: 2020-06-22 seg 19:31</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -1,18 +1,17 @@
 #+TITLE: Integração de aplicações entre servidores e dispositivos móveis
 #+AUTHOR: Ivan Salvadori
+#+LANGUAGE: pt_br
 #+EMAIL: Your email address
 #+DATE: 04/06/2020
-#+DESCRIPTION: Este artigo apresenta as principais formas de integração entre servidores e aplicações executadas dispositivos móveis. Primeiramente, é fundamental definir alguns conceitos básicos bem como especificar a motivação para integração neste cenário.
-
 #+HTML_HEAD: <meta name="docClass" content= "Artigo"> 
-
-
 #+INFOJS_OPT: path:../../HtmlTemplate/ccReport.js
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
 
 
 #+TODO: TODO(t) STARTED(s) WAITING(w) | DONE(d) CANCELED(c)
- 
+[[[file:artigo-en.org][English]]] 
+
+Atenção, este documento está em desenvolvimento. 
 
 
 * Introdução
@@ -76,16 +75,40 @@ Ou seja, de acordo com o domínio para o qual é fornecido, um serviço deve rep
 Na prática, funcionalidades são implementadas na forma de serviços web que expõem seus recursos de forma programática pela internet atravéz de protocolos padronizados.
 
 
-Existem duas abordagens para implementar Web Services: SOAP e APIs Web RESTful.
-SOAP
+As abordagens mais utilizadas para implementar serviços Web são SOAP e APIs Web RESTful.
+SOAP é o modelo mais tradicional e amplamente utilizado por grandes organizações, além de ser um padrão recomendado pelo W3C. 
+No padrão SOAP, a comunicação é realizada através do envio de um envelope de dados pelo cliente para o serviço web. 
+O envelope é um documento no formato XML que carrega internamente o conteúdo da mensagem, e pode conter vários elementos opcionais, relacionados à infraestrutura, para lidar com as questões de segurança, roteamento, dentre outras propriedades.
+
 Foco em integraçao entre aplicações servidores
 ESB
 Padroes XML nao tao confortaveis para apps Web
 
 
-REST....
+REST é uma coleção de princípios e restrições arquiteturais para o desenvolvimento de aplicações distribuídas na Web.
+REST é uma abordagem leve para o desenvolvimento de Web Services, que busca simplicidade e baixo acoplamento.
+Recursos formam a base dos princípios REST e podem ser qualquer informação que se deseje tornar acessível a clientes remotos, e que são endereçados através de um identificador único, denominado URI (Uniform Resource Identifier ). 
+Recursos podem ser uma lista de filmes em cartaz em um cinema, comentários de um blog, uma página pessoal ou um perfil de um usuário de uma rede social, por exemplo.
+Uma das representações de recurso mais utilizadas em Web Services REST é o JSON. 
+JSON é uma forma textual de representação de dados estruturados em uma coleção de pares no formato de chave/valor.
 
-Integração com APIs públicas
+Um dos principais princípios arquiteturais REST é o estabelecimento de uma interface uniforme entre cliente e servidor. 
+O uso de uma interface uniforme proporciona uma arquitetura simplificada e desacoplada. Uma das formas para estabelecer uma interface uniforme é respeitar a semântica do protocolo utilizado pelo Web Service. 
+O HTTP é o protocolo mais utilizados em Web Services REST, e respeitar a semântica do protocolo significa utilizar adequadamente os seus verbos e códigos de mensagens. 
+
+Os verbos HTTP mais utilizados são:
+ * GET - Obter a representação de um recurso;
+ * POST - Criar um novo recurso;
+ * PUT - Alterar um recurso;
+ * DELETE - Remover um recurso.
+
+Espera-se que os significados dos verbos HTTP sejam respeitados, empregando o verbo adequado para cada ação, embora muitas implementações REST negligenciem esta restrição e utilizam GET para obter, criar, alterar e remover recursos, dentre outras combinações.
+Outra restrição imposta pelo REST é a correta utilização de códigos de status ou mensagens. 
+Todas as requisições tratadas pelo servidor recebem um código de status, que informa ao cliente o resultado da requisição.
+Requisições que resultam em sucesso devem retornar uma resposta com um dos códigos do grupo 2XX. Outro exemplo é quando o cliente faz uma requisição que não possui autorização, onde o código de resposta deve ser 401, indicando ao cliente que o erro é de autenticação inválida. Da mesma forma, quando ocorre algum erro interno do servidor, a resposta deve apresentar o erro 500. Os códigos de status do protocolo HTTP fornecem uma maneira adequada de categorizar e padronizar respostas das requisições, e os princípios REST pedem atenção neste aspecto.
+
+Outra restrição arquitetural exige que as requisições contenham todas as informações necessárias para sua execução, sem recorrer a dados armazenados em sessões do usuário. Não é esperado que o servidor mantenha dados na sessão do usuário, tornando a aplicação stateless.
+É responsabilidade da aplicação cliente manter o estado dos recursos para o usuário final, ficando o servidor com a responsabilidade de disponibilizar representações de recursos e alterar seus estados. O comportamento stateless implica que o servidor não deve manter nenhuma informação sobre as requisições realizadas. O envio de todas as informações necessárias para a execução das requisições, somado à utilização correta do protocolo utilizado pelo Web Service resulta em mensagens auto-descritivas, outro importante princípio arquitetural REST.
 
 * Integração Assíncrona
 
@@ -99,6 +122,8 @@ Assim sendo, o protocolo WebSocket muda a forma como os servidores web lidam com
 
 
 Filas e tópics
+
+
 
 
 * Conclusão

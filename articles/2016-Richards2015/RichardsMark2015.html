@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-06-05 sex 14:07 -->
+<!-- 2020-06-22 seg 19:11 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Microservices vs. Service-Oriented Architecture</title>
@@ -309,18 +309,18 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org9c01228">1. Overview</a></li>
-<li><a href="#orga48f9fd">2. Important definitions</a></li>
-<li><a href="#orgcd8e3ac">3. SOA vs Microservices</a>
+<li><a href="#orgbbde484">1. Overview</a></li>
+<li><a href="#org73394c4">2. Important definitions</a></li>
+<li><a href="#org6c4e062">3. SOA vs Microservices</a>
 <ul>
-<li><a href="#orgfd24916">3.1. Development teams allocation and service granularity</a></li>
-<li><a href="#org767a6d8">3.2. Component sharing</a></li>
-<li><a href="#orgc488ff3">3.3. Accessing remote services</a></li>
-<li><a href="#orge83bbef">3.4. Architecture capabalities</a></li>
+<li><a href="#orgb7e6ad1">3.1. Development teams allocation and service granularity</a></li>
+<li><a href="#orga74f42a">3.2. Component sharing</a></li>
+<li><a href="#org4bdea35">3.3. Accessing remote services</a></li>
+<li><a href="#orgd5eb53d">3.4. Architecture capabalities</a></li>
 </ul>
 </li>
-<li><a href="#org419f762">4. Discussion points</a></li>
-<li><a href="#org8d41b3a">5. Conclusions</a></li>
+<li><a href="#org19911a1">4. Discussion points</a></li>
+<li><a href="#orgf56d2fe">5. Conclusions</a></li>
 </ul>
 </div>
 </div>
@@ -328,26 +328,26 @@ for the JavaScript code in this tag.
 This is a report of Richards, M. (2015). Microservices vs. Service-Oriented Architecture. (N. Barber &amp; R. Roumeliotis, Eds.). 1005 Gravenstein Highway North, Sebastopol, CA 95472. O’Reilly: O’Reilly Media, Inc. Retrieved from <a href="https://www.nginx.com/microservices-soa/">https://www.nginx.com/microservices-soa/</a>.
 </p>
 
-<div id="outline-container-org9c01228" class="outline-2">
-<h2 id="org9c01228"><span class="section-number-2">1</span> Overview</h2>
+<div id="outline-container-orgbbde484" class="outline-2">
+<h2 id="orgbbde484"><span class="section-number-2">1</span> Overview</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 This book draws a comparison between SOA and Microservices architecture.
-It is presented some differences between the two approaches, but is is also presented some common points.
+It is presented some differences between the two approaches, but it is also presented some common points.
 The comparison is made by comparing the two architectures taking into account a variety of properties and parameters.
 </p>
 
 <p>
-The book is well written and the ideas is well presented.
-However, the author says:  "<i>Unfortunately, companies learned the hard way that SOA was a big, expensive, complicated architecture style that took too long to design and implement[&#x2026;]</i>", but in a some point later, he also says that the book will help to pick the more suitable architecture (SOA or microservices) for a particular situation.
+The book is well written and the ideas are well presented.
+However, the author says:  "<i>Unfortunately, companies learned the hard way that SOA was a big, expensive, complicated architecture style that took too long to design and implement[&#x2026;]</i>", but in some point later, he also says that the book will help to pick the more suitable architecture (SOA or microservices) for a particular situation.
 I wonder if an architecture with properties like "big, expensive, complicated architecture style and that takes too long to design and implement" should be a suitable alternative for some particular situation. 
 In other words, the author seems to be a little biased for microservices' side. 
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga48f9fd" class="outline-2">
-<h2 id="orga48f9fd"><span class="section-number-2">2</span> Important definitions</h2>
+<div id="outline-container-org73394c4" class="outline-2">
+<h2 id="org73394c4"><span class="section-number-2">2</span> Important definitions</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 This book brings important definitions to the microservice context, such as:
@@ -356,11 +356,11 @@ This book brings important definitions to the microservice context, such as:
 <li><b>modularity:</b> the practice of encapsulating portions of the application into self-contained services with little or no dependency on other components or services;</li>
 <li><b>service contract:</b> an agreement between a service and a service consumer that specifies the inbound and outbound data;</li>
 <li><b>service availability:</b> the ability of a remote service to accept requests in a timely manner;</li>
-<li><b>BASE transactions:</b> strive for eventual consistency in database rather than consistency at every transaction;</li>
+<li><b>BASE transactions:</b> strive for eventual consistency in a database rather than consistency at every transaction;</li>
 <li><b>service:</b> a mechanism to enable access to one or more capabilities.</li>
 <li><b>component:</b> a unit of software that has a well-defined interface and a well-defined set of roles and responsibilities;</li>
-<li><b>service orchestration:</b> the coordination of multiple service through a centralized mediator;</li>
-<li><b>service choreography:</b> the coordination of multiple service without a central mediator. It is also called inter-service-communication;</li>
+<li><b>service orchestration:</b> the coordination of multiple services through a centralized mediator;</li>
+<li><b>service choreography:</b> the coordination of multiple services without a central mediator. It is also called inter-service-communication;</li>
 </ul>
 
 <p>
@@ -373,7 +373,7 @@ The taxonomy consists of two service types:
 </ul>
 
 <p>
-On the other hand, SOA has a much more rich taxonomy for services, in which includes <b>business services</b>, <b>enterprise services</b>, <b>application services</b> and <b>infrastructure services</b>.
+On the other hand, SOA has a much more rich taxonomy for services, which includes <b>business services</b>, <b>enterprise services</b>, <b>application services</b>, and <b>infrastructure services</b>.
 </p>
 
 <p>
@@ -383,41 +383,41 @@ However, It is necessary to emphasize that REST is not a protocol, but a set of 
 </div>
 </div>
 
-<div id="outline-container-orgcd8e3ac" class="outline-2">
-<h2 id="orgcd8e3ac"><span class="section-number-2">3</span> SOA vs Microservices</h2>
+<div id="outline-container-org6c4e062" class="outline-2">
+<h2 id="org6c4e062"><span class="section-number-2">3</span> SOA vs Microservices</h2>
 <div class="outline-text-2" id="text-3">
 <p>
-The author considers microservices architecture as something different of SOA, whereas some authors state that Microservices is a subset of SOA, or a different way to implement SOA.
+The author considers microservices architecture as something different from SOA, whereas some authors state that Microservices is a subset of SOA, or a different way to implement SOA.
 SOA and microservices have some points in common.
-The first one is the fact that both architectures are considered <i>service-based</i> and also <i>distributed architectures</i>, what implies that the services are accessed remotely.
+The first one is the fact that both architectures are considered <i>service-based</i> and also <i>distributed architectures</i>, which implies that the services are accessed remotely.
 </p>
 </div>
 
-<div id="outline-container-orgfd24916" class="outline-3">
-<h3 id="orgfd24916"><span class="section-number-3">3.1</span> Development teams allocation and service granularity</h3>
+<div id="outline-container-orgb7e6ad1" class="outline-3">
+<h3 id="orgb7e6ad1"><span class="section-number-3">3.1</span> Development teams allocation and service granularity</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 In SOA architecture, teams are usually responsible for implementing just one type of service.
 A given team may be responsible for some business services and another team may be responsible for some infrastructure services, for instance.
-In another way, in the Microservice architecture, teams take the responsibilities for both functional and infrastructure services.
+In another way, in the Microservice architecture, teams take responsibilities for both functional and infrastructure services.
 </p>
 
 <p>
-Another difference is related to teams and business resquest.
-In SOA, there is the need of coordinate multiples teams to create or maintain a single business request, resulting in a great effort and time involve and maintain services.
-on the other hand, with microservices, there is a little or no coordination among services to fulfill a single busisness request.
+Another difference is related to teams and business request.
+In SOA, there is the need to coordinate multiples teams to create or maintain a single business request, resulting in a great effort and time involve and maintain services.
+on the other hand, with microservices, there is little or no coordination among services to fulfill a single business request.
 </p>
 
 <p>
-Despite the development teams allocation problem has been related with service granularity, the main concern regards on teams.
-On top of that, service granulary affects the performance of services, and also the transaction management.
-A good advice the author give is a quote from Sam Newman that says: "<i>Start with a small number of larger services first</i>".
+Despite the development team allocation problem has been related to service granularity, the main concern regards on teams.
+On top of that, service granularity affects the performance of services, and also the transaction management.
+A piece of good advice the author gives is a quote from Sam Newman that says: "<i>Start with a small number of larger services first</i>".
 </p>
 </div>
 </div>
 
-<div id="outline-container-org767a6d8" class="outline-3">
-<h3 id="org767a6d8"><span class="section-number-3">3.2</span> Component sharing</h3>
+<div id="outline-container-orga74f42a" class="outline-3">
+<h3 id="orga74f42a"><span class="section-number-3">3.2</span> Component sharing</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 SOA and microservices take different approaches for sharing components.
@@ -440,8 +440,8 @@ However, if a API layer (or API gateway) is used, the orchestration is a importa
 </div>
 </div>
 
-<div id="outline-container-orgc488ff3" class="outline-3">
-<h3 id="orgc488ff3"><span class="section-number-3">3.3</span> Accessing remote services</h3>
+<div id="outline-container-org4bdea35" class="outline-3">
+<h3 id="org4bdea35"><span class="section-number-3">3.3</span> Accessing remote services</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 The way remote services are accessed represents a fundamental difference between SOA and microservices.
@@ -451,8 +451,8 @@ Moreover, microservices tend to keep the homogeneity on communication approach, 
 </div>
 </div>
 
-<div id="outline-container-orge83bbef" class="outline-3">
-<h3 id="orge83bbef"><span class="section-number-3">3.4</span> Architecture capabalities</h3>
+<div id="outline-container-orgd5eb53d" class="outline-3">
+<h3 id="orgd5eb53d"><span class="section-number-3">3.4</span> Architecture capabalities</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 The author compares SOA and microservices taking into account the architecture capabilities, such as the size of application suitable for a given architecture, the type of components and the ability of the architecture deal with contract decoupling. 
@@ -478,17 +478,17 @@ Moreover, microservices does not support contract decoupling.
 </div>
 </div>
 
-<div id="outline-container-org419f762" class="outline-2">
-<h2 id="org419f762"><span class="section-number-2">4</span> Discussion points</h2>
+<div id="outline-container-org19911a1" class="outline-2">
+<h2 id="org19911a1"><span class="section-number-2">4</span> Discussion points</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 The author states that are two basic types of service contracts: service-based and consumer-driven.
-In the the service-based contract, the server don't care if a change in the contract will create a incompatibility to a service consumer. 
+In the service-based contract, the server doesn't care if a change in the contract will create an incompatibility to a service consumer. 
 On the other hand, consumer-driven contracts take into account the service consumers' needs. 
-This type of contract requires the serve to know who are its consumers, and know how the service is used by each service.
+This type of contract requires the server to know who are its consumers, and know how the service is used by each service.
 Despite this limitation, service consumers are free to suggest changes to the services.
-This feature brings up new opportunities to explore a dynamic service behavior, where a service could provide different services based on consumers need in a automated fashion.
-However, the way that services consumer will give a suggestion and how services will understand and apply the suggestion still open.
+This feature brings up new opportunities to explore dynamic service behavior, where a service could provide different services based on consumers' needs in an automated fashion.
+However, the way that services consumers will give a suggestion and how services will understand and apply the suggestion still open.
 </p>
 
 <p>
@@ -496,48 +496,48 @@ According to the author, a service must have a well-defined service contract.
 Does a service without a well-defined contract not considered a service.
 I do not agree with that, actually, I believe that services should not have well-defined <b>static</b> contracts.
 When we talk about contracts, we are generally talking about static contracts. 
-In order to provide the flexibility to support some changes in the service, service contract should be defined in run-time, and the service consumers should be able to understand the contract in run-time, instead of be developed based on a static contract defined in design-time.
+In order to provide the flexibility to support some changes in the service, a service contract should be defined in run-time, and the service consumers should be able to understand the contract in run-time, instead of being developed based on a static contract defined in design-time.
 </p>
 
 <p>
-Despite microservices reduce the inter-service-communication, it still need a significant communication effort to coordinate functional and infrastructure services.
-Similar to the API layer (API gateway) is used to create a service vision to service consumers and, at the same time it eliminates the need  of know details about microservices, an API layer would be useful to coordinate the communication between function and infrastructure services.
-Figure <a href="#orga484b7c">1</a> shows two alternative of microservices layers.
-The first one uses another API layer to create a facade to infrastructure services.
-The second one uses a message broker to establish a communication between functional and infrastructure services based on events.
+Despite microservices reduce the inter-service-communication, it still needs a significant communication effort to coordinate functional and infrastructural services.
+Similar to the API layer (API gateway) is used to create a service vision to service consumers and, at the same time it eliminates the need to know details about microservices, an API layer would be useful to coordinate the communication between function and infrastructure services.
+Figure <a href="#orgc9b27d8">1</a> shows two alternatives of microservices layers.
+The first one uses another API layer to create a facade for infrastructure services.
+The second one uses a message broker to establish communication between functional and infrastructure services based on events.
 </p>
 
 
-<div id="orga484b7c" class="figure">
+<div id="orgc9b27d8" class="figure">
 <p><img src="microservicesLayers.png" alt="microservicesLayers.png" width="450pt" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Two alternative of layers for modeling microservices</p>
 </div>
 
 <p>
- The author talks about contract decoupling in terms of message transformation and enhancement.
-However, there are much more to consider when talking about contracts.
-IMHO, contracts should guide service consumers on how to interact with services, in terms of communication details such as protocol to use, payload format, pre- and pos-conditions and so on.
+The author talks about contract decoupling in terms of message transformation and enhancement.
+However, there is much more to consider when talking about contracts.
+IMHO, contracts should guide service consumers on how to interact with services, in terms of communication details such as protocol to use, payload format, pre- and pos-conditions, and so on.
 The way it is presented sounds that data transformation and enhancement must be performed exclusively by middleware, restricting those operations only on SOA.
 However such operations could be performed by infrastructure services into a microservices architecture with the same or similar results.
-Furthermore, none of the architectures SOA or microservices are able to decoupling contract without mechanisms for describing services in terms of their semantics.
+Furthermore, none of the architectures SOA or microservices are able to decoupling contracts without mechanisms for describing services in terms of their semantics.
 It is also mandatory, the service consumers being able to understand service contracts semantics in a dynamic fashion, and not be developed based on a static contract.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org8d41b3a" class="outline-2">
-<h2 id="org8d41b3a"><span class="section-number-2">5</span> Conclusions</h2>
+<div id="outline-container-orgf56d2fe" class="outline-2">
+<h2 id="orgf56d2fe"><span class="section-number-2">5</span> Conclusions</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 This book compares two architectures SOA and microservices.
 The author takes into account both architectural properties and capabilities.
-Regardless the properties and capabilities, service granularity seems to be central point and source of differences, which has influence over other properties and capabilities.
+Regardless of the properties and capabilities, service granularity seems to be the central point and source of differences, which has influence over other properties and capabilities.
 </p>
 
 <p>
-Microservices is not about small services, but services that implement a well-defined bounded context (what should be small, or at least no too big).
-At a first glance, microservices should increase the fragmentation of services, which implies more effort in communication.
+Microservices is not about small services, but services that implement a well-defined bounded context (what should be small, or at least not too big).
+At first glance, microservices should increase the fragmentation of services, which implies more effort in communication.
 That is not completely true, once a microservice should implement everything to handle a single business request.
 In that way, SOA represents a more fragmented architecture.
 </p>
@@ -546,7 +546,7 @@ In that way, SOA represents a more fragmented architecture.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Ivan Salvadori</p>
-<p class="date">Created: 2020-06-05 sex 14:07</p>
+<p class="date">Created: 2020-06-22 seg 19:11</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

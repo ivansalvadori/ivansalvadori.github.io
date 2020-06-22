@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-06-22 seg 20:13 -->
+<!-- 2020-06-22 seg 19:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ivan Salvadori</title>
+<title>Microservices tenets: Agile approach to service development and deployment</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -179,15 +179,16 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="css/homePageTemplate.css" />
+<link rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
+<meta name="docClass" content= "Review">
 
-<script type="text/javascript" src="css/homePageTemplate.js">
+<script type="text/javascript" src="../../HtmlTemplate/ccReport.js">
 /**
  *
- * @source: css/homePageTemplate.js
+ * @source: ../../HtmlTemplate/ccReport.js
  *
  * @licstart  The following is the entire license notice for the
- *  JavaScript code in css/homePageTemplate.js.
+ *  JavaScript code in ../../HtmlTemplate/ccReport.js.
  *
  * Copyright (C) 2012-2018 Free Software Foundation, Inc.
  *
@@ -207,7 +208,7 @@
  * through which recipients can access the Corresponding Source.
  *
  * @licend  The above is the entire license notice
- * for the JavaScript code in css/homePageTemplate.js.
+ * for the JavaScript code in ../../HtmlTemplate/ccReport.js.
  *
  */
 </script>
@@ -301,69 +302,110 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Ivan Salvadori</h1>
+<h1 class="title">Microservices tenets: Agile approach to service development and deployment</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org9d62b51">1. Research interest</a></li>
-<li><a href="#org752847b">2. Education</a></li>
-<li><a href="#orgb5f9d6f">3. Contact</a></li>
+<li><a href="#orge07bc75">1. <span class="done DONE">DONE</span> Overview</a></li>
+<li><a href="#orgce0f01b">2. <span class="done DONE">DONE</span> Comments</a></li>
 </ul>
 </div>
 </div>
-<hr></hr>
-<ul id="nav"> 
-<li><a href="publications.html">Publications</a></li>
-<li><a href="projects.html">Projects</a></li> 
-<li><a href="about.html">About</a></li>
+<p>
+Zimmermann, O. (2016). Microservices tenets: Agile approach to service development and deployment. Computer Science - Research and Development. <a href="http://doi.org/10.1007/s00450-016-0337-0">http://doi.org/10.1007/s00450-016-0337-0</a>
+</p>
+
+<div id="outline-container-orge07bc75" class="outline-2">
+<h2 id="orge07bc75"><span class="section-number-2">1</span> <span class="done DONE">DONE</span> Overview</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This paper analyzes the literature on microservices to identify its tenets. The analysis confirms that microservices can be seen as a variant of SOA in terms of development. In other words, microservices represent one particular approach to implementing SOA. The differences between microservices and SOA are not related to the architectural style, but the concrete realization.
+</p>
+
+<p>
+This paper identifies seven microservices tenets:
+</p>
+<ol class="org-ol">
+<li><b>Fine-grained interfaces</b>: aims at single-responsibility units that can be deployed, changed, replaced, and scaled independently.</li>
+<li><b>Business-driven development</b>: aims at identifying and conceptualize services.</li>
+<li><b>Cloud-native application</b>: summarized in IDEAL (isolated state, distribution, elasticity, automated management and loose coupling) or Heroku's twelve app factors.</li>
+<li><b>Multiple computing paradigms</b>: polyglot programming and persistence strategy.</li>
+<li><b>Lightweight containers</b>: used to deploy services.</li>
+<li><b>Decentralized continuous delivery</b>: aims at reaching high levels of deployment automation and autonomy.</li>
+<li><b>DevOps</b>: aims at reaching high levels of automation for configuration, service monitoring, fault management, etc.</li>
+</ol>
+
+
+<p>
+Concerning microservice definition, the author presents two contrary positions:
+</p>
+<ol class="org-ol">
+<li>Microservices as new architectural style.</li>
+<li>Microservices as one way of doing SOA.</li>
+</ol>
+
+<p>
+In terms of SOA vs. microservices, most of the characteristics of microservices can be found in SOA patterns and best practices. The author presents a map that relates SOA characteristics to microservices. Hence, there is no evidence that microservices is a novel architectural style.
+</p>
+
+<p>
+The author says that architectural styles are defined by design intent, principles, and patters, or via technical constraints. However, it is questionable whether process-related and organizational aspects should be included in such definitions.
+</p>
+
+<p>
+This article brings some questions/concerns from practitioners. It is said that practitioners welcome guidance that shows more detailed and concrete solutions rather than frequent advice. Such questions/concerns encompass:
+</p>
+<ul class="org-ul">
+<li>the use of REST and microservices;</li>
+<li>if the Web protocols are sufficient;</li>
+<li>if other remote communication approaches besides HTTP is valid;</li>
+<li>how to deal with classic distributed issues:
+<ul class="org-ul">
+<li>data representations;</li>
+<li>schema mismatches;</li>
+<li>versioning.</li>
+</ul></li>
+<li>how to define machine-readable contracts;</li>
+<li>semantic interoperability between services and consumers;</li>
+<li>how to compose microservices;</li>
+<li>intercommunication between microservices;</li>
+<li>tools, libraries, frameworks and middlewares for microservices;</li>
+<li>how to deal with rich/complex domain models with interconnected entities.</li>
 </ul>
-<br>
 
-
-
-<div class="figure">
-<p><img src="images/ivanS.jpg" alt="ivanS.jpg" style="display:inline; float:right; width:110pt; padding:5px; margin:20px; border-radius: 105px; box-shadow: 0 0 5px rgba(0, 0, 0, .15); !important" />
+<p>
+In conclusion, it states that HTTP+REST is the only approach to implement remote communication. Then, microservices contracts should handle at least HTTP and message queue protocols. It is an open question on how to create a larger processing unit from a collection of microservices. Another open question is related to patterns, such as API Gateway, that would be necessary to support microservices. Finally, in the response of people who have a negative perspective, the author states that SOA is here to stay.
 </p>
 </div>
-
-<div id="outline-container-org9d62b51" class="outline-2">
-<h2 id="org9d62b51"><span class="section-number-2">1</span> Research interest</h2>
-<div class="outline-text-2" id="text-1">
-<ul class="org-ul">
-<li>Microservices architecture</li>
-<li>Semantic Web and Linked Data</li>
-<li>Web Development</li>
-<li>Application and data integration</li>
-</ul>
-</div>
 </div>
 
-<div id="outline-container-org752847b" class="outline-2">
-<h2 id="org752847b"><span class="section-number-2">2</span> Education</h2>
+
+
+<div id="outline-container-orgce0f01b" class="outline-2">
+<h2 id="orgce0f01b"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> Comments</h2>
 <div class="outline-text-2" id="text-2">
-<ul class="org-ul">
-<li>D.Sc. in Computer Science (2019) - <a href="http://ufsc.br">UFSC</a>, Brazil.</li>
-<li>M.Sc. degree in Computer Science (2015) - <a href="http://ufsc.br">UFSC</a>, Brazil.</li>
-<li>Quality and Software Engineering Specialist (2015) -  <a href="http://www.unisul.br">Unisul University</a>, Brazil.</li>
-<li>B.Sc. degree in Computer Science (2009) - <a href="http://ufsc.br">UFSC</a>, Brazil.</li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-orgb5f9d6f" class="outline-2">
-<h2 id="orgb5f9d6f"><span class="section-number-2">3</span> Contact</h2>
-<div class="outline-text-2" id="text-3">
 <p>
-The best way to contact me is by email: ivanlsalvadori[at]gmail[dot]com.
-Further information is available on my <a href="https://www.researchgate.net/profile/Ivan_Salvadori">Research Gate</a> profile, on the Brazilian <a href="http://lattes.cnpq.br/3951980993273260">Lattes</a> CV or on my <a href="https://www.linkedin.com/in/ivansalvadori">Linkedin</a> profile.
+I disagree with microservices tenets numbered from 4 to 7 could be considered tenets. Except for tenet number 4, they address issues related to post-building services. In other words, these tenets are applied after the microservice creation. With regard to tenet number 4, polyglot programming and persistence are important to make the development more independent, however, it does not affect the microservice itself. These tenets (from 4 to 7) would be better classified as optional microservice characteristics.
+</p>
+
+<p>
+One of the identified (SOA and microservices) characteristic is related to smart endpoints and dumb pipes. Could service discovery and composition middlewares be considered as pipes? If so, the use of them could violate this characteristic?
+</p>
+
+<p>
+The author points out an important issue when say that in software architecture, architectural styles are defined by design intent, principles and patterns, or via technical constraints. However, microservices are currently defined taking into account process-related and organization aspects. I think these two different aspects should be considered separately. Moreover, considering non-truly architectural aspects for modeling microservices could influence service reuse and composition.
+</p>
+
+<p>
+This article addresses microservices compositions as an open question on how to create a larger processing unit from a collection of microservices. The author mentioned both the composition problem and the use of semantics more than once.
 </p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2020-06-22 seg 20:13</p>
+<p class="date">Date: 2017-02-04</p>
+<p class="date">Created: 2020-06-22 seg 19:03</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
