@@ -17,7 +17,7 @@
 
  * Oliveira, B. C. N., Huf, A., Salvadori, I., & Siqueira, F. (2019). Semantic Enrichment of Services for Linked Data Provision in SOA. Proceedings of the XV Brazilian Symposium on Information Systems - SBSI’19, 1–8. https://doi.org/10.1145/3330204.3330258
 
- * Oliveira, B. C. N., Huf, A., Salvadori, I. L., & Siqueira, F. (2018). OntoGenesis: an architecture for automatic semantic enhancement of data services. International Journal of Web Information Systems, IJWIS-04-2018-0020. Retrieved from https://www.emeraldinsight.com/doi/10.1108/IJWIS-04-2018-0020
+ * Oliveira, B. C. N., Huf, A., Salvadori, I. L., & Siqueira, F. (2019). OntoGenesis: an architecture for automatic semantic enhancement of data services. International Journal of Web Information Systems, 15(1), 2–27. https://doi.org/10.1108/IJWIS-04-2018-0020
 
  * Oliveira, B. C. N., Huf, A., Salvadori, I., & Siqueira, F. (2017). Automatic Semantic Enrichment of Data Services. Proceedings of the 19th International Conference on Information Integration and Web-Based Applications and Services - IiWAS ’17. https://doi.org/10.1145/3151759.3151783
 
@@ -57,3 +57,13 @@
 </a>
 </div>
 #+END_EXPORT
+
+
+
+
+
+
+
+
+
+

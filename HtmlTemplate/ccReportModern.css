@@ -1,18 +1,19 @@
 .headerDiv {
    text-align: right;
-   font-weight: bold;
    text-align: right;
    color: #222;
-   font-size: 1.1em; 
+   font-size: 1.3rem;
    padding-bottom: 5px;
 }
 
+
+
 .changeFontSizeDiv {
-   font-weight: bold;
    text-align: right;
    color: #222;
    font-size: 1.0em; 
 }​
+
 
 article,
 aside,
@@ -29,6 +30,8 @@ summary {
 }
 audio,
 canvas,
+
+
 video {
   display: inline-block;
 }
@@ -40,11 +43,10 @@ audio:not([controls]) {
   display: none;
 }
 html {
-  font-family: "Courier New", "Courier", monospace !important;
-  color: #222;
-  font-size: 17px;
-  line-height: 170%;
-  text-shadow: 0 0 0;
+  font-family: 'Rubik', sans-serif; !important;
+  color: #767676;
+  font-size: 18px;
+  line-height: 1.8;
 }
 body {
   margin: 0;
@@ -52,7 +54,7 @@ body {
   margin: 0 auto;
   max-width: 23cm;
   border: 2pt solid #E6E6E6;
-  padding: 4em 4%;
+  padding: 2em 4%;
 }
 a:focus {
   outline: thin dotted;
@@ -192,7 +194,7 @@ h6 {
   color: #222;
 }
 html {
-  background-color: #F2F2F2;
+  background-color: white;
   color: #222;
   margin: 2em;
 }
@@ -203,17 +205,17 @@ code {
   font-size: 0.8em;
 }
 a {
-  color: #0074d9;
+  color: #A4A4A4;
   text-decoration: none;
-  border-bottom: 1px  #999;
+  border-bottom: 1px dashed #999;
 }
 a:visited {
-  color: ##0074d9;
-  border-bottom: 1px  #999;
+  color: #A4A4A4;
+  border-bottom: 1px dashed #999;
 }
 a:hover {
-  color: #cb4b16;
-  border-bottom: 1px #999;
+  color: #2E2E2E;
+  border-bottom: 1px dashed #999;
 }
 h1 {
   color: #222;
@@ -253,10 +255,9 @@ li{
   padding: 0.1em;
 }
 .reportDiv {
-   font-weight: bold;
    text-align: right;
    color: #E6E6E6;
-   font-size: 2.0em;
+   font-size: 1.2em;
 }​
 .tag {
   background-color: #BDBDBD;

@@ -1,6 +1,6 @@
 #+TITLE: Integração de aplicações entre servidores e dispositivos móveis
 #+AUTHOR: Ivan Salvadori
-#+LANGUAGE: pt_br
+#+LANGUAGE: pt_BR
 #+EMAIL: Your email address
 #+DATE: 04/06/2020
 #+HTML_HEAD: <meta name="docClass" content= "Artigo"> 
@@ -86,15 +86,15 @@ Padroes XML nao tao confortaveis para apps Web
 
 
 REST é uma coleção de princípios e restrições arquiteturais para o desenvolvimento de aplicações distribuídas na Web.
-REST é uma abordagem leve para o desenvolvimento de Web Services, que busca simplicidade e baixo acoplamento.
-Recursos formam a base dos princípios REST e podem ser qualquer informação que se deseje tornar acessível a clientes remotos, e que são endereçados através de um identificador único, denominado URI (Uniform Resource Identifier ). 
+REST é uma abordagem leve para o desenvolvimento de serviços web, que busca simplicidade e baixo acoplamento.
+Recursos formam a base serviços REST e podem ser qualquer informação a tornar-se acessível a clientes remotos, e que são endereçados através de um identificador único, denominado URI (Uniform Resource Identifier ). 
 Recursos podem ser uma lista de filmes em cartaz em um cinema, comentários de um blog, uma página pessoal ou um perfil de um usuário de uma rede social, por exemplo.
 Uma das representações de recurso mais utilizadas em Web Services REST é o JSON. 
 JSON é uma forma textual de representação de dados estruturados em uma coleção de pares no formato de chave/valor.
 
 Um dos principais princípios arquiteturais REST é o estabelecimento de uma interface uniforme entre cliente e servidor. 
-O uso de uma interface uniforme proporciona uma arquitetura simplificada e desacoplada. Uma das formas para estabelecer uma interface uniforme é respeitar a semântica do protocolo utilizado pelo Web Service. 
-O HTTP é o protocolo mais utilizados em Web Services REST, e respeitar a semântica do protocolo significa utilizar adequadamente os seus verbos e códigos de mensagens. 
+O uso de uma interface uniforme proporciona uma arquitetura simplificada e desacoplada. Uma das formas para estabelecer uma interface uniforme é respeitar a semântica do protocolo utilizado pelo serviço. 
+O HTTP é o protocolo mais utilizados em REST, e respeitar a semântica do protocolo significa utilizar adequadamente os seus verbos e códigos de mensagens. 
 
 Os verbos HTTP mais utilizados são:
  * GET - Obter a representação de um recurso;
@@ -105,10 +105,14 @@ Os verbos HTTP mais utilizados são:
 Espera-se que os significados dos verbos HTTP sejam respeitados, empregando o verbo adequado para cada ação, embora muitas implementações REST negligenciem esta restrição e utilizam GET para obter, criar, alterar e remover recursos, dentre outras combinações.
 Outra restrição imposta pelo REST é a correta utilização de códigos de status ou mensagens. 
 Todas as requisições tratadas pelo servidor recebem um código de status, que informa ao cliente o resultado da requisição.
-Requisições que resultam em sucesso devem retornar uma resposta com um dos códigos do grupo 2XX. Outro exemplo é quando o cliente faz uma requisição que não possui autorização, onde o código de resposta deve ser 401, indicando ao cliente que o erro é de autenticação inválida. Da mesma forma, quando ocorre algum erro interno do servidor, a resposta deve apresentar o erro 500. Os códigos de status do protocolo HTTP fornecem uma maneira adequada de categorizar e padronizar respostas das requisições, e os princípios REST pedem atenção neste aspecto.
+Requisições que resultam em sucesso devem retornar uma resposta com um dos códigos do grupo 2XX. 
+Outro exemplo é quando o cliente faz uma requisição que não possui autorização, onde o código de resposta deve ser 401, indicando ao cliente que o erro é de autenticação inválida. 
+Da mesma forma, quando ocorre algum erro interno do servidor, a resposta deve apresentar o erro 500. 
+Os códigos de status do protocolo HTTP fornecem uma maneira adequada de categorizar e padronizar respostas das requisições, e os princípios REST pedem atenção neste aspecto.
 
 Outra restrição arquitetural exige que as requisições contenham todas as informações necessárias para sua execução, sem recorrer a dados armazenados em sessões do usuário. Não é esperado que o servidor mantenha dados na sessão do usuário, tornando a aplicação stateless.
-É responsabilidade da aplicação cliente manter o estado dos recursos para o usuário final, ficando o servidor com a responsabilidade de disponibilizar representações de recursos e alterar seus estados. O comportamento stateless implica que o servidor não deve manter nenhuma informação sobre as requisições realizadas. O envio de todas as informações necessárias para a execução das requisições, somado à utilização correta do protocolo utilizado pelo Web Service resulta em mensagens auto-descritivas, outro importante princípio arquitetural REST.
+É responsabilidade da aplicação cliente manter o estado dos recursos para o usuário final, ficando o servidor com a responsabilidade de disponibilizar representações de recursos e alterar seus estados. O comportamento stateless implica que o servidor não deve manter nenhuma informação sobre as requisições realizadas. 
+O envio de todas as informações necessárias para a execução das requisições, somado à utilização correta do protocolo utilizado pelo serviço resultam em mensagens auto-descritivas, outro importante princípio arquitetural REST.
 
 * Integração Assíncrona
 
@@ -129,3 +133,10 @@ Filas e tópics
 * Conclusão
 
 Aplicações móveis desenvolvidas com tecnologias Web -> integração via Web service.
+
+Uma importante vantagem de REST sobre SOAP é que o protocolo auxilia o cliente a compreender a troca de mensagens ao incorporar corretamente códigos de status, formato de dados negociados e semântica de verbos.
+Por outro lado, serviços SOAP envelopam toda a informação em uma estrutura.
+Além da resposta do serviço, o envelope SOAP contém as informações sobre o sucesso ou fracasso da requisição.
+No context de serviços SOAP, é comum a utilização de HTTP POST para operações somente leitura, bem como código 200 como padrão para todas as respostas, mesmo que a requisição seja mal sucedida. 
+Neste caso, informações sobre o erro estão encapsuladas no próprio envolope SOAP.
+Dessa forma, o cliente não possui nenhuma informação sobre a resposta enquanto não processar completamente o envelope recebido.

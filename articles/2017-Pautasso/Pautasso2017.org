@@ -1,6 +1,6 @@
 #+INFOJS_OPT: path:../../HtmlTemplate/ccReport.js
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
-#+TITLE: Microservices in Practice, Part 1: Reality Check and Service Design
+#+TITLE: Microservices in Practice, Part 1: Reality Check and Service Design (Review)
 #+DATE: 2017-02-04
 #+HTML_HEAD: <meta name="docClass" content= "Review">
 

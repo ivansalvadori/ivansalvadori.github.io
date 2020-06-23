@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-06-22 seg 19:11 -->
+<!-- 2020-06-23 ter 12:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Microservices vs. Service-Oriented Architecture</title>
+<title>Microservices vs. Service-Oriented Architecture (Review)</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Ivan Salvadori" />
 <meta name="description" content="Review"
@@ -304,23 +304,23 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Microservices vs. Service-Oriented Architecture</h1>
+<h1 class="title">Microservices vs. Service-Oriented Architecture (Review)</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgbbde484">1. Overview</a></li>
-<li><a href="#org73394c4">2. Important definitions</a></li>
-<li><a href="#org6c4e062">3. SOA vs Microservices</a>
+<li><a href="#org536052d">1. Overview</a></li>
+<li><a href="#orgafaee85">2. Important definitions</a></li>
+<li><a href="#org488330c">3. SOA vs Microservices</a>
 <ul>
-<li><a href="#orgb7e6ad1">3.1. Development teams allocation and service granularity</a></li>
-<li><a href="#orga74f42a">3.2. Component sharing</a></li>
-<li><a href="#org4bdea35">3.3. Accessing remote services</a></li>
-<li><a href="#orgd5eb53d">3.4. Architecture capabalities</a></li>
+<li><a href="#org4994414">3.1. Development teams allocation and service granularity</a></li>
+<li><a href="#orgdfc54a6">3.2. Component sharing</a></li>
+<li><a href="#org634c466">3.3. Accessing remote services</a></li>
+<li><a href="#org0eeaf18">3.4. Architecture capabalities</a></li>
 </ul>
 </li>
-<li><a href="#org19911a1">4. Discussion points</a></li>
-<li><a href="#orgf56d2fe">5. Conclusions</a></li>
+<li><a href="#org21dda75">4. Discussion points</a></li>
+<li><a href="#org76b5756">5. Conclusions</a></li>
 </ul>
 </div>
 </div>
@@ -328,8 +328,8 @@ for the JavaScript code in this tag.
 This is a report of Richards, M. (2015). Microservices vs. Service-Oriented Architecture. (N. Barber &amp; R. Roumeliotis, Eds.). 1005 Gravenstein Highway North, Sebastopol, CA 95472. O’Reilly: O’Reilly Media, Inc. Retrieved from <a href="https://www.nginx.com/microservices-soa/">https://www.nginx.com/microservices-soa/</a>.
 </p>
 
-<div id="outline-container-orgbbde484" class="outline-2">
-<h2 id="orgbbde484"><span class="section-number-2">1</span> Overview</h2>
+<div id="outline-container-org536052d" class="outline-2">
+<h2 id="org536052d"><span class="section-number-2">1</span> Overview</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 This book draws a comparison between SOA and Microservices architecture.
@@ -346,8 +346,8 @@ In other words, the author seems to be a little biased for microservices' side.
 </div>
 </div>
 
-<div id="outline-container-org73394c4" class="outline-2">
-<h2 id="org73394c4"><span class="section-number-2">2</span> Important definitions</h2>
+<div id="outline-container-orgafaee85" class="outline-2">
+<h2 id="orgafaee85"><span class="section-number-2">2</span> Important definitions</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 This book brings important definitions to the microservice context, such as:
@@ -383,8 +383,8 @@ However, It is necessary to emphasize that REST is not a protocol, but a set of 
 </div>
 </div>
 
-<div id="outline-container-org6c4e062" class="outline-2">
-<h2 id="org6c4e062"><span class="section-number-2">3</span> SOA vs Microservices</h2>
+<div id="outline-container-org488330c" class="outline-2">
+<h2 id="org488330c"><span class="section-number-2">3</span> SOA vs Microservices</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 The author considers microservices architecture as something different from SOA, whereas some authors state that Microservices is a subset of SOA, or a different way to implement SOA.
@@ -393,8 +393,8 @@ The first one is the fact that both architectures are considered <i>service-base
 </p>
 </div>
 
-<div id="outline-container-orgb7e6ad1" class="outline-3">
-<h3 id="orgb7e6ad1"><span class="section-number-3">3.1</span> Development teams allocation and service granularity</h3>
+<div id="outline-container-org4994414" class="outline-3">
+<h3 id="org4994414"><span class="section-number-3">3.1</span> Development teams allocation and service granularity</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 In SOA architecture, teams are usually responsible for implementing just one type of service.
@@ -416,8 +416,8 @@ A piece of good advice the author gives is a quote from Sam Newman that says: "<
 </div>
 </div>
 
-<div id="outline-container-orga74f42a" class="outline-3">
-<h3 id="orga74f42a"><span class="section-number-3">3.2</span> Component sharing</h3>
+<div id="outline-container-orgdfc54a6" class="outline-3">
+<h3 id="orgdfc54a6"><span class="section-number-3">3.2</span> Component sharing</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 SOA and microservices take different approaches for sharing components.
@@ -440,8 +440,8 @@ However, if a API layer (or API gateway) is used, the orchestration is a importa
 </div>
 </div>
 
-<div id="outline-container-org4bdea35" class="outline-3">
-<h3 id="org4bdea35"><span class="section-number-3">3.3</span> Accessing remote services</h3>
+<div id="outline-container-org634c466" class="outline-3">
+<h3 id="org634c466"><span class="section-number-3">3.3</span> Accessing remote services</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 The way remote services are accessed represents a fundamental difference between SOA and microservices.
@@ -451,8 +451,8 @@ Moreover, microservices tend to keep the homogeneity on communication approach, 
 </div>
 </div>
 
-<div id="outline-container-orgd5eb53d" class="outline-3">
-<h3 id="orgd5eb53d"><span class="section-number-3">3.4</span> Architecture capabalities</h3>
+<div id="outline-container-org0eeaf18" class="outline-3">
+<h3 id="org0eeaf18"><span class="section-number-3">3.4</span> Architecture capabalities</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 The author compares SOA and microservices taking into account the architecture capabilities, such as the size of application suitable for a given architecture, the type of components and the ability of the architecture deal with contract decoupling. 
@@ -478,8 +478,8 @@ Moreover, microservices does not support contract decoupling.
 </div>
 </div>
 
-<div id="outline-container-org19911a1" class="outline-2">
-<h2 id="org19911a1"><span class="section-number-2">4</span> Discussion points</h2>
+<div id="outline-container-org21dda75" class="outline-2">
+<h2 id="org21dda75"><span class="section-number-2">4</span> Discussion points</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 The author states that are two basic types of service contracts: service-based and consumer-driven.
@@ -502,13 +502,13 @@ In order to provide the flexibility to support some changes in the service, a se
 <p>
 Despite microservices reduce the inter-service-communication, it still needs a significant communication effort to coordinate functional and infrastructural services.
 Similar to the API layer (API gateway) is used to create a service vision to service consumers and, at the same time it eliminates the need to know details about microservices, an API layer would be useful to coordinate the communication between function and infrastructure services.
-Figure <a href="#orgc9b27d8">1</a> shows two alternatives of microservices layers.
+Figure <a href="#org35ea40c">1</a> shows two alternatives of microservices layers.
 The first one uses another API layer to create a facade for infrastructure services.
 The second one uses a message broker to establish communication between functional and infrastructure services based on events.
 </p>
 
 
-<div id="orgc9b27d8" class="figure">
+<div id="org35ea40c" class="figure">
 <p><img src="microservicesLayers.png" alt="microservicesLayers.png" width="450pt" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Two alternative of layers for modeling microservices</p>
@@ -526,8 +526,8 @@ It is also mandatory, the service consumers being able to understand service con
 </div>
 </div>
 
-<div id="outline-container-orgf56d2fe" class="outline-2">
-<h2 id="orgf56d2fe"><span class="section-number-2">5</span> Conclusions</h2>
+<div id="outline-container-org76b5756" class="outline-2">
+<h2 id="org76b5756"><span class="section-number-2">5</span> Conclusions</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 This book compares two architectures SOA and microservices.
@@ -546,7 +546,7 @@ In that way, SOA represents a more fragmented architecture.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Ivan Salvadori</p>
-<p class="date">Created: 2020-06-22 seg 19:11</p>
+<p class="date">Created: 2020-06-23 ter 12:55</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

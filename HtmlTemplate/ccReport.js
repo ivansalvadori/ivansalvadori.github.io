@@ -22,6 +22,7 @@ $(document).ready(function() {
   addLineInAuthorsInfo();
   formatFooter();
   setDocumentClass();
+  addCopyrights();
 
 });
 
@@ -85,6 +86,22 @@ function addLineInAuthorsInfo(){
    $("#postamble").prepend( $( "<br><hr align='left' width='25%'>" ));
 }
 
+function addCopyrights(){
+   title = $(".title").text();
+   lang = $('html').attr('lang');
+   
+   if(lang == "pt"| lang == "PT"| lang == "pt-br"| lang == "PT-BR"| lang == "pt_br"| lang == "pt_BR"| lang == "português"| lang == "Português"){
+	   
+	 $("#postamble").append('<div style="text-align: center; margin: 50px 50px 0px 50px;"><a style="border-bottom: none;" rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">'+ title +'</span> de <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Ivan Luiz Salvadori</span> está licenciado com uma Licença <a style="border-bottom: none;" rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons - Atribuição 4.0 Internacional</a>.</div>')
+    
+   }
+   else{   
+	$("#postamble").append( '<div style="text-align: center; margin: 50px 50px 0px 50px;"><a style="border-bottom: none;" rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">'+ title +'</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Ivan Luiz Salvadori</span> is licensed under a <a rel="license" style="border-bottom: none;" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>');
+   }
+   
+   
+   
+}
 
 
 //orgmode workaround - ignore it
