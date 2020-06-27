@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 .headerDiv {
    text-align: right;
    font-weight: bold;
@@ -40,7 +42,7 @@ audio:not([controls]) {
   display: none;
 }
 html {
-  font-family: "Courier New", "Courier", monospace !important;
+  font-family: 'Roboto Mono', monospace; !important;
   color: #222;
   font-size: 17px;
   line-height: 170%;
@@ -61,6 +63,11 @@ a:active,
 a:hover {
   outline: 0;
 }
+
+p {
+  line-height: 30px;   /* within paragraph */
+  margin-bottom: 28px; /* between paragraphs */
+  }
 h1 {
   font-size: 2em;
 }
