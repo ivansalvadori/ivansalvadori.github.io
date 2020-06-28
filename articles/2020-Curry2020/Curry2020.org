@@ -1,0 +1,73 @@
+#+TITLE: Real-time Linked Dataspaces (Review)
+#+AUTHOR: Ivan Salvadori
+#+DATE: <2020-06-27 sáb>
+#+LANGUAGE: en
+#+DESCRIPTION: Review
+#+INFOJS_OPT: path:../../HtmlTemplate/ccReport.js
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
+#+TODO: TODO(t) STARTED(s) WAITING(w) | DONE(d) CANCELED(c)
+
+This article is a review of Curry, E. (2020). Real-time Linked Dataspaces. Springer International Publishing. https://doi.org/10.1007/978-3-030-29665-0
+
+* Preliminaries 
+It starts describing challenges in handling data integration and its corresponding activities. It also discusses the number of connected devices from IoT-based infrastructure, producing a huge amount of data. Traditional approaches to data management are not sufficient to deal with it. As a result, it is increasing the number of data silos. A paradigm shift is necessary to overcome the challenges. Moreover, a new class of information management and processing system is required to support distributed real-time applications. These systems have to be able to handle semantically heterogeneous databases and perform integration involving thousands of data sources.
+
+The Pareto principle says that 20% of the effort delivers 80% of the results.
+This has been valid for many aspects of computer science.
+For example, 20% of bugs that cause 80% of the system crashes.
+However, the current way large-scale data ecosystem infrastructures are designed does not fit that principle.
+This book is a step towards unlocking the Pareto effect over data.
+
+#+BEGIN_QUOTE
+"This book explores the dataspace paradigm as an alternative best-effort approach
+to data management with data ecosystems. 
+It establishes the theoretical foundations and principles of Real-time Linked Dataspaces as a data platform for intelligent systems, and introduces a set of specialised best-effort techniques and models to enable loose administrative proximity and semantic integration for managing and processing events and streams."
+#+END_QUOTE
+
+
+
+
+
+
+* TODO A Data Platform for Intelligent Systems
+
+** Summary
+
+** Comments
+
+* TODO Enabling Knowledge Flows in an Intelligent Systems Data Ecosystem
+
+* TODO Dataspaces: Fundamentals, Principles, and Techniques
+
+* TODO Fundamentals of Real-time Linked Dataspaces
+
+* TODO Data Support Services for Real-time Linked Dataspaces
+
+* TODO Catalog and Entity Management Service for Internet of Things-Based Smart Environments 
+
+* TODO Querying and Searching Heterogeneous Knowledge Graphs in Real-time Linked Dataspaces
+
+* TODO Enhancing the Discovery of Internet of Things-Based Data Services in Real-time Linked Dataspaces
+
+* TODO Human-in-the-Loop Tasks for Data Management, Citizen Sensing, and Actuation in Smart Environments
+
+* TODO Stream and Event Processing Services for Real-time Linked Dataspaces
+
+* TODO Quality of Service-Aware Complex Event Service Composition in Real-time Linked Dataspaces
+
+* TODO Dissemination of Internet of Things Streams in a Real-time Linked Dataspace
+
+* TODO Approximate Semantic Event Processing in Real-time Linked Dataspaces
+
+* TODO Enabling Intelligent Systems, Applications, and Analytics for Smart Environments Using Real-time Linked Dataspaces
+
+* TODO Autonomic Source Selection for Real-time Predictive Analytics Using the Internet of Things and Open Data
+
+* TODO Building Internet of Things-Enabled Digital Twins and Intelligent Applications Using a Real-time Linked Dataspace
+
+* TODO A Model for Internet of Things Enhanced User Experience in Smart Environments
+
+* TODO Future Research Directions for Dataspaces, Data Ecosystems, and Intelligent Systems
+
+
+* Final Considerations

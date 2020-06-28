@@ -7,7 +7,7 @@ $(document).ready(function() {
   $("#table-of-contents").hide();
   //removeSpecialElemets();
   removeNotToSpecialElemets();
-  putTodoTagsOnRight();
+  //putTodoTagsOnRight();
   $("h1").before('<div class="headerDiv"><a id="headerLink" style="border-bottom: none; color:#cb4b16; visited:#cb4b16;" href="https://ivansalvadori.github.io/">ivansalvadori.github.io</a></div> ')
   $("h1").before('<div class="reportDiv">[Report]</div>')
   $(".reportDiv").after('<div class="changeFontSizeDiv"><a id="upFontSize" href="#" style=" border-bottom: none;">[+A]</a><a id="downFontSize" href="#" style=" border-bottom: none;">[-A]</a></div>');
@@ -37,6 +37,10 @@ function formatFooter(){
 
 function setDocumentClass(){
 	var classe = $('meta[name=docClass]').attr("content");
+	if(!classe){
+		var classe = $('meta[name=description]').attr("content");
+	}
+
 	if(classe){
 		$(".reportDiv").html("["+ classe +"]")
 	}

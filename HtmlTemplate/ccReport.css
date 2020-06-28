@@ -16,6 +16,21 @@
    font-size: 1.0em; 
 }​
 
+blockquote {
+} 
+
+blockquote p {
+  border-radius: 5px;
+  border-right: 7px solid #ccc;  !important;
+  margin: 1.5em 10px;  !important;
+  padding: 0.5em 10px;  !important;
+  quotes: "\201C""\201D""\2018""\2019"; 
+  font-size: 15px;
+  text-align:justify;
+  line-height: 22px;   /* within paragraph */
+  margin-bottom: 40px;
+}
+
 article,
 aside,
 details,
@@ -42,10 +57,9 @@ audio:not([controls]) {
   display: none;
 }
 html {
-  font-family: 'Roboto Mono', monospace; !important;
+  font-family: 'Roboto Mono', monospace; 
   color: #222;
   font-size: 17px;
-  line-height: 170%;
   text-shadow: 0 0 0;
 }
 body {
@@ -238,22 +252,22 @@ pre code {
   background-color: #BDBDBD;
 }
 h1 {
-  font-size: 2.0em;
-}
-h2 {
   font-size: 1.6em;
 }
-h3 {
-  font-size: 1.4em;
-}
-h4 {
+h2 {
   font-size: 1.2em;
 }
-h5 {
+h3 {
   font-size: 1.0em;
 }
-h6 {
+h4 {
   font-size: 0.8em;
+}
+h5 {
+  font-size: 0.6em;
+}
+h6 {
+  font-size: 0.5em;
 }
 
 li{
@@ -353,6 +367,7 @@ li{
 .collapse_toc {
    font-size:14px;
 }​
+
 
 
 
