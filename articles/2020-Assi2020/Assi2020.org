@@ -1,0 +1,16 @@
+#+TITLE: Data linking over RDF knowledge graphs: A survey (Review)
+#+AUTHOR: Ivan Salvadori
+#+LANGUAGE: en
+#+EMAIL: Your email address
+#+DATE: 03/07/2020
+#+DESCRIPTION:Review 
+#+INFOJS_OPT: path:../../HtmlTemplate/ccReport.js
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
+
+
+#+TODO: TODO(t) STARTED(s) WAITING(w) | DONE(d) CANCELED(c)
+This is a review of Assi, A., Mcheick, H., & Dhifli, W. (2020). Data linking over RDF knowledge graphs: A survey. Concurrency and Computation: Practice and Experience, (February), 1–40. https://doi.org/10.1002/cpe.5746
+
+* TODO Overview
+
+* TODO Comments

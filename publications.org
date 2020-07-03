@@ -3,6 +3,7 @@
 
 ** Non-refereed publications
 
+ * [[file:articles/2020-Assi2020/Assi2020.org][A Review]] of Assi, A., Mcheick, H., & Dhifli, W. (2020). Data linking over RDF knowledge graphs: A survey.
  * [[file:articles/2020-Curry2020/Curry2020.org][A review]] of Curry, E. (2020). Real-time Linked Dataspaces.
  * Integrating Mobile Applications with Servers. (2020). [[[file:articles/2020-integracao-servidor-movel/artigo-en.org][English]]|[[file:articles/2020-integracao-servidor-movel/artigo-pt-br.org][Português]]]
  * [[file:articles/2017-Pautasso/Pautasso2017.org][A review]] of Pautasso, C., Zimmermann, O., Amundsen, M., Lewis, J., & Josuttis, N. (2017). Microservices in Practice, Part 1: Reality Check and Service Design. IEEE Software.

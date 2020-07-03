@@ -2,7 +2,9 @@
 
 * Projects 
 
-
+** csv2rdf
+   [[https://github.com/ivansalvadori/csv2rdf][csv2rdf]] is a tool/library for converting CSV files into RDF triples.
+   
 ** TODO Linkedator
 To be published.
 
