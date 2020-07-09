@@ -15,6 +15,8 @@
 
 ** Refereed publications
 
+ * Salvadori, I., Huf, A., & Siqueira, F. (2020). Data Linking as a Service : An Infrastructure for Generating and Publishing Linked Data on the Web. 2020 IEEE 44th Annual Computers, Software, and Applications Conference (COMPSAC), 262–271. https://doi.org/10.1109/COMPSAC48688.2020.00042
+
  * Salvadori, I. L., Huf, A., & Siqueira, F. (2019). Semantic Data-Driven Microservices. 2019 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC), 402–410. https://doi.org/10.1109/COMPSAC.2019.00065
 
  * Oliveira, B. C. N., Huf, A., Salvadori, I., & Siqueira, F. (2019). Semantic Enrichment of Services for Linked Data Provision in SOA. Proceedings of the XV Brazilian Symposium on Information Systems - SBSI’19, 1–8. https://doi.org/10.1145/3330204.3330258
