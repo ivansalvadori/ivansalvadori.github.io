@@ -1,68 +1,14 @@
-#+INFOJS_OPT: path:css/bibtexParser.js
 #+INCLUDE: "header.org"
+#+BEGIN_EXPORT html
+<script src="css/bibtexParser.js"></script>
+#+END_EXPORT
+
+* Publications
 
 
-* Writing xx
-
-** Non-refereed publications
-
- * [[file:articles/2020-Assi2020/Assi2020.org][A Review]] of Assi, A., Mcheick, H., & Dhifli, W. (2020). Data linking over RDF knowledge graphs: A survey.
- * [[file:articles/2020-Curry2020/Curry2020.org][A review]] of Curry, E. (2020). Real-time Linked Dataspaces.
- * Integrating Mobile Applications with Servers. (2020). [[[file:articles/2020-integracao-servidor-movel/artigo-en.org][English]]|[[file:articles/2020-integracao-servidor-movel/artigo-pt-br.org][Português]]]
- * [[file:articles/2017-Pautasso/Pautasso2017.org][A review]] of Pautasso, C., Zimmermann, O., Amundsen, M., Lewis, J., & Josuttis, N. (2017). Microservices in Practice, Part 1: Reality Check and Service Design. IEEE Software.
- * [[file:articles/2016-Zimmermann2016/Zimmermann2016.org][A review]] of Zimmermann, O. (2016). Microservices tenets: Agile approach to service development and deployment.
- * [[file:articles/2016-Newman2015/Newman2015.org][A review]] of Newman, S. (2015). Building Microservices.
- * [[file:articles/2016-Richards2015/RichardsMark2015.org][A review]] of Richards, M. (2015). Microservices vs. Service-Oriented Architecture. 
-
-
-
-** Refereed publications
-
- * Salvadori, I., Huf, A., & Siqueira, F. (2020). Data Linking as a Service : An Infrastructure for Generating and Publishing Linked Data on the Web. 2020 IEEE 44th Annual Computers, Software, and Applications Conference (COMPSAC), 262–271. https://doi.org/10.1109/COMPSAC48688.2020.00042
-
- * Salvadori, I. L., Huf, A., & Siqueira, F. (2019). Semantic Data-Driven Microservices. 2019 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC), 402–410. https://doi.org/10.1109/COMPSAC.2019.00065
-
- * Oliveira, B. C. N., Huf, A., Salvadori, I., & Siqueira, F. (2019). Semantic Enrichment of Services for Linked Data Provision in SOA. Proceedings of the XV Brazilian Symposium on Information Systems - SBSI’19, 1–8. https://doi.org/10.1145/3330204.3330258
-
- * Oliveira, B. C. N., Huf, A., Salvadori, I. L., & Siqueira, F. (2019). OntoGenesis: an architecture for automatic semantic enhancement of data services. International Journal of Web Information Systems, 15(1), 2–27. https://doi.org/10.1108/IJWIS-04-2018-0020
-
- * Oliveira, B. C. N., Huf, A., Salvadori, I., & Siqueira, F. (2017). Automatic Semantic Enrichment of Data Services. Proceedings of the 19th International Conference on Information Integration and Web-Based Applications and Services - IiWAS ’17. https://doi.org/10.1145/3151759.3151783
-
- * Huf, A., Salvadori, I., & Siqueira, F. (2017). Planning and execution of heterogeneous service compositions. 2017 IEEE Symposium on Computers and Communications (ISCC), 987–993. https://doi.org/10.1109/ISCC.2017.8024654
-
- * Weingartner, R., Martins, P. H. P., Salvadori, I. L., Westphall, C. M., & Siqueira, F. (2017). Improving OpenID Connect Federation’s Interoperability with Web Semantics. 2017 IEEE/ACS 14th International Conference on Computer Systems and Applications (AICCSA), 1269–1276. https://doi.org/10.1109/AICCSA.2017.106
-
- * Salvadori, I. L., Huf, A., Oliveira, B. C. N., dos Santos Mello, R., & Siqueira, F. (2017). Improving entity linking with ontology alignment for semantic microservices composition. International Journal of Web Information Systems, 13(3), 302–323. https://doi.org/10.1108/IJWIS-04-2017-0029
-
- * Salvadori, I., Oliveira, B. C. N., Huf, A., Inacio, E. C., & Siqueira, F. (2017). An Ontology Alignment Framework for Data-driven Microservices. Proceedings of the 19th International Conference on Information Integration and Web-Based Applications and Services - iiWAS ’17. https://doi.org/10.1145/3151759.3151793
-
- * Salvadori, I., Huf, A., & Siqueira, F. (2016). An Agent-based Composition Model for Semantic Microservices. In P. Isaías (Ed.), 15th International Conference WWW/Internet (pp. 75–82). Retrieved from http://iadisportal.org/digital-library/an-agent-based-composition-model-for-semantic-microservices
-
- * Salvadori, I., Huf, A., Mello, R. dos S., & Siqueira, F. (2016). Publishing linked data through semantic microservices composition. Proceedings of the 18th International Conference on Information Integration and Web-Based Applications and Services - iiWAS ’16, 443–452. https://doi.org/10.1145/3011141.3011155
-
- * Huf, A., Salvadori, I., & Siqueira, F. (2016). A Service-Oriented Approach for Integrating Broadcast Facilities. 2016 IEEE International Conference on Services Computing (SCC), 705–712. https://doi.org/10.1109/SCC.2016.97
-
- * Oliveira, B. C. N., Salvadori, I., Huf, A., & Siqueira, F. (2016). A platform to enrich, expand and publish linked data of police reports. In P. Isaías (Ed.), 15th International Conference WWW/Internet (pp. 111–118). Retrieved from http://iadisportal.org/digital-library/a-platform-to-enrich-expand-and-publish-linked-data-of-police-reports
-
- * de Camargo, A., Salvadori, I., Mello, R. dos S., & Siqueira, F. (2016). An architecture to automate performance tests on microservices. Proceedings of the 18th International Conference on Information Integration and Web-Based Applications and Services - iiWAS ’16, 422–429. https://doi.org/10.1145/3011141.3011179
-
- * Salvadori, I., & Siqueira, F. (2015). A Maturity Model for Semantic RESTful Web APIs. 2015 IEEE International Conference on Web Services, 703–710. https://doi.org/10.1109/ICWS.2015.98
-
- * Salvadori, I. L., & Siqueira, F. (2014). A Framework for Semantic Description of RESTful Web APIs. 2014 IEEE International Conference on Web Services, 630–637. https://doi.org/10.1109/ICWS.2014.93
-
- * Salvadori, I., & Siqueira, F. (2014). Desenvolvimento de Web APIs RESTful Semânticas. Linked Open Data Brasil, 111–126. https://doi.org/10.13140/RG.2.1.4068.8803
-
-
-
-
-** Books
 
 #+BEGIN_EXPORT html
-<div>
-<a href="https://leanpub.com/javawebapis">
-   <img  style="margin: 20px 20px 20px 40px;" width="150" src="https://d2sofvawe08yqg.cloudfront.net/javawebapis/hero?1549480629">
-</a>
-</div>
+<div id="pub-div"></div>
 #+END_EXPORT
 
 
