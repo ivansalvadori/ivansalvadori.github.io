@@ -1,5 +1,8 @@
+#+INFOJS_OPT: path:css/bibtexParser.js
 #+INCLUDE: "header.org"
-* Writing 
+
+
+* Writing xx
 
 ** Non-refereed publications
 
