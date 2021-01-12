@@ -16,7 +16,7 @@ var bibSample = "@inproceedings{Salvadori2019, author = {Salvadori, Ivan Luiz an
 
 var parseBibFromRepo = function() {
 	$.ajax({
-		url: "https://github.com/ivansalvadori/ivansalvadori.github.io/blob/master/publications.bib",
+		url: "https://ivansalvadori.github.io/publications.bib",
 		type: 'GET',
                 dataType: 'text',
 		async: true,
