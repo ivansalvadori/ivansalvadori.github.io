@@ -4,16 +4,19 @@
 #+ATTR_HTML: :style display:inline; float:right; width:110pt; padding:5px; margin:20px; border-radius: 105px; box-shadow: 0 0 5px rgba(0, 0, 0, .15); !important
 [[file:images/ivanS.jpg]]
 
+Assistant Professor at the Federal University of Technology - Paraná, Brazil.
+
+
 * Research interest
  * Microservices architecture
  * Semantic Web and Linked Data
- * Web Development 
+ * Web Applications 
  * Application and data integration
 
 * Education
  * D.Sc. in Computer Science (2019) - [[http://ufsc.br][UFSC]], Brazil.
  * M.Sc. degree in Computer Science (2015) - [[http://ufsc.br][UFSC]], Brazil.
- * Quality and Software Engineering Specialist (2015) -  [[http://www.unisul.br][Unisul University]], Brazil.
+ * Quality and Software Engineering Specialist (2015) - [[https://www.univali.br/][UNIVALI]], Brazil.
  * B.Sc. degree in Computer Science (2009) - [[http://ufsc.br][UFSC]], Brazil.
 
 
