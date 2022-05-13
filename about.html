@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-09-13 seg 12:43 -->
+<!-- 13/05/2022 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ivan Salvadori</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -30,8 +30,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,21 +41,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -190,18 +191,16 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="css/homePageTemplate.css" />
+<link rel="stylesheet" type="text/css" href="css/plain_and_simple.css" />
 
-<script type="text/javascript" src="css/homePageTemplate.js">
+<script src="css/homePageTemplate.js">
 // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 // @license-end
 </script>
 
-<script type="text/javascript">
+<script>
 // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
-<!--/*--><![CDATA[/*><!--*/
 org_html_manager.set("TOC_DEPTH", "3");
 org_html_manager.set("LINK_HOME", "");
 org_html_manager.set("LINK_UP", "");
@@ -212,46 +211,23 @@ org_html_manager.set("FIXED_TOC", "0");
 org_html_manager.set("TOC", "1");
 org_html_manager.set("VIEW", "info");
 org_html_manager.setup();  // activate after the parameters are set
-/*]]>*///-->
-// @license-end
-</script>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
 // @license-end
 </script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Ivan Salvadori</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf89d130">1. Research interest</a></li>
-<li><a href="#org0b6838f">2. Education</a></li>
-<li><a href="#orgdc0d6c0">3. Contact</a></li>
+<li><a href="#org26fff0c">1. Research interest</a></li>
+<li><a href="#orgd9196fb">2. Education</a></li>
+<li><a href="#org2a98895">3. Contact</a></li>
 </ul>
 </div>
 </div>
-<hr></hr>
+
 <ul id="nav"> 
 <li><a href="publications.html">Writing</a></li>
 <li><a href="projects.html">Projects</a></li> 
@@ -261,17 +237,17 @@ org_html_manager.setup();  // activate after the parameters are set
 
 
 
-<div id="orgb6a80d6" class="figure">
-<p><img src="images/ivanS.jpg" alt="ivanS.jpg" style="display:inline; float:right; width:110pt; padding:5px; margin:20px; border-radius: 105px; box-shadow: 0 0 5px rgba(0, 0, 0, .15); !important" />
+<div id="org3a9ea25" class="figure">
+<p><img src="images/ivanS.jpg" alt="ivanS.jpg" style="display:inline; float:right; width:100pt; padding:5px; margin:20px; border-radius: 105px; box-shadow: 0 0 5px rgba(0, 0, 0, .15); !important" />
 </p>
 </div>
 
 <p>
-Computer Scientist and Assistant Professor at the Federal University of Technology - Paraná (UTFPR), Brazil.
+Computer Scientist and Assistant Professor at the Federal University of Technology - Paraná (UTFPR) - Toledo,  Brazil.
 </p>
 
-<div id="outline-container-orgf89d130" class="outline-2">
-<h2 id="orgf89d130"><span class="section-number-2">1</span> Research interest</h2>
+<div id="outline-container-org26fff0c" class="outline-2">
+<h2 id="org26fff0c"><span class="section-number-2">1.</span> Research interest</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>Microservices architecture</li>
@@ -282,8 +258,8 @@ Computer Scientist and Assistant Professor at the Federal University of Technolo
 </div>
 </div>
 
-<div id="outline-container-org0b6838f" class="outline-2">
-<h2 id="org0b6838f"><span class="section-number-2">2</span> Education</h2>
+<div id="outline-container-orgd9196fb" class="outline-2">
+<h2 id="orgd9196fb"><span class="section-number-2">2.</span> Education</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>D.Sc. in Computer Science (2019) - <a href="http://ufsc.br">UFSC</a>, Brazil.</li>
@@ -295,8 +271,8 @@ Computer Scientist and Assistant Professor at the Federal University of Technolo
 </div>
 
 
-<div id="outline-container-orgdc0d6c0" class="outline-2">
-<h2 id="orgdc0d6c0"><span class="section-number-2">3</span> Contact</h2>
+<div id="outline-container-org2a98895" class="outline-2">
+<h2 id="org2a98895"><span class="section-number-2">3.</span> Contact</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 The best way to contact me is by email: ivanlsalvadori[at]gmail[dot]com.
@@ -306,7 +282,7 @@ Further information is available on my <a href="https://www.researchgate.net/pro
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-09-13 seg 12:43</p>
+<p class="date">Created: 13/05/2022</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

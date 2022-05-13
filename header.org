@@ -1,9 +1,9 @@
 #+TITLE:Ivan Salvadori
-#+INFOJS_OPT: path:css/homePageTemplate.js
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/homePageTemplate.css" />
+#+INFOJS_OPT: path:css/plain_and_simple.js
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/plain_and_simple.css" />
 
 #+begin_src emacs-lisp :exports results :results html
-"<hr></hr>
+"
 <ul id=\"nav\"> 
 <li><a href=\"publications.html\">Writing</a></li>
 <li><a href=\"projects.html\">Projects</a></li> 

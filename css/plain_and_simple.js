@@ -19,15 +19,11 @@ $(document).ready(function() {
 
   $(".title").removeClass("title");
   $(".figure").removeClass("figure");
+
   
-  addCssCredits(); 
 
 });
 
-
-function addCssCredits(){
-  $("#postamble").append("PLAINANDSIMPLE is a free template from Free CSS Templates");
-}
 
 
 function removeSpecialElemets(){
