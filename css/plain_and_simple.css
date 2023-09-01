@@ -31,6 +31,8 @@ body {
   border: 2pt solid white;
   padding: 1em 4%;
   font-family: "Courier New", Courier, monospace;
+  font-weight: Normal ;
+
   
 }
 
@@ -139,6 +141,19 @@ a:hover {
 
 li{
   padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.outline-3{
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.org-ul{
+  font-size: 1.1em;
+}
+.org-li{
+  font-size: 1.1em;
 }
 
 .reportDiv {

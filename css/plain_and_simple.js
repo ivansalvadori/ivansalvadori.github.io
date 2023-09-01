@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 function removeSpecialElemets(){
   $(".validation, .done, .todo, .TODO, .CANCELED").remove();
-  $(".tag").remove();
+  //$(".tag").remove();
   $(".section-number-2, .section-number-3, .section-number-4, .section-number-5").remove();
 }
 
