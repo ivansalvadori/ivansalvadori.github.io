@@ -14,11 +14,17 @@
  - 21h30 às 22h30 - Gabriel Junior Picagevicz
    
 
+* Lucas Felix                                              :TCC1:EmAndamento:
+- Email: lucas.felix199948@gmail.com
+- Título: Não definido
+- Histórico de acompanhamento
+  
+ 
 * Matheus Augusto Condé Dias                          :TCC1:TCC2:EmAndamento:
 - Email: mdias.1998@alunos.utfpr.edu.br
 - Título: Integração dos sistemas CSV2RDF e SDD-MS através de uma infraestrutura para importação de Dados CSV e Geração automática de WebServices Semânticos
 - Histórico de acompanhamento
-  + 30/08 - Definição de plano de atividades
+  + <2023-08-30 qua> - Definição de plano de atividades
 
 
 
@@ -31,7 +37,7 @@
 - Email: diego.gomes87@gmail.com
 - Título: Gamificação no Ensino Remoto de Programação
 - Histórico de acompanhamento
-  + 30/08 - Definição de plano de atividades
+  + <2023-08-30 qua> - Definição de plano de atividades
 
 * Matheus da Costa Varela                                  :TCC1:EmAndamento:
 - Email: matheusvarela@alunos.utfpr.edu.br
