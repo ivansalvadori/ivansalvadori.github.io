@@ -31,6 +31,8 @@
 * Gabriel Junior Picagevicz                           :TCC1:TCC2:EmAndamento:
 - Email: gabrielpicagevicz@alunos.utfpr.edu.br
 - Título: Integração de Dados Heterogêneos Governamentais: Implementação de um Data Warehouse
+- Histórico de acompanhamento
+  + <2023-09-01 sex> - Definição de plano de atividades
 
 
 * Diego Gomes                                         :TCC1:TCC2:EmAndamento:
