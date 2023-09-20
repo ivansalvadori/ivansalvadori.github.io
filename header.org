@@ -6,7 +6,7 @@
   "
   <ul id=\"nav\">
   <li><a href=\"students.html\">Students</a></li>
-  <li><a href=\"publications.html\">Writing</a></li>
+  <li><a href=\"publications.html\">Publications</a></li>
   <li><a href=\"projects.html\">Projects</a></li> 
   <li><a href=\"about.html\">About</a></li>
   </ul>

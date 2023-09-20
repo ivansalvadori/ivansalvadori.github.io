@@ -14,13 +14,15 @@
  - 21h30 às 22h30 - Gabriel Junior Picagevicz
    
 
-* Lucas Felix                                              :TCC1:EmAndamento:
+** Lucas Felix                                             :TCC1:EmAndamento:
 - Email: lucas.felix199948@gmail.com
 - Título: Não definido
 - Histórico de acompanhamento
+  + <2023-09-15 sex> - Definição do escopo do trabalho
+  
   
  
-* Matheus Augusto Condé Dias                          :TCC1:TCC2:EmAndamento:
+** Matheus Augusto Condé Dias                         :TCC1:TCC2:EmAndamento:
 - Email: mdias.1998@alunos.utfpr.edu.br
 - Título: Integração dos sistemas CSV2RDF e SDD-MS através de uma infraestrutura para importação de Dados CSV e Geração automática de WebServices Semânticos
 - Histórico de acompanhamento
@@ -28,25 +30,25 @@
 
 
 
-* Gabriel Junior Picagevicz                           :TCC1:TCC2:EmAndamento:
+** Gabriel Junior Picagevicz                          :TCC1:TCC2:EmAndamento:
 - Email: gabrielpicagevicz@alunos.utfpr.edu.br
 - Título: Integração de Dados Heterogêneos Governamentais: Implementação de um Data Warehouse
 - Histórico de acompanhamento
   + <2023-09-01 sex> - Definição de plano de atividades
 
 
-* Diego Gomes                                         :TCC1:TCC2:EmAndamento:
+** Diego Gomes                                        :TCC1:TCC2:EmAndamento:
 - Email: diego.gomes87@gmail.com
 - Título: Gamificação no Ensino Remoto de Programação
 - Histórico de acompanhamento
   + <2023-08-30 qua> - Definição de plano de atividades
 
-* Matheus da Costa Varela                                  :TCC1:EmAndamento:
+** Matheus da Costa Varela                                 :TCC1:EmAndamento:
 - Email: matheusvarela@alunos.utfpr.edu.br
 - Título: Análise comparativa entre uma aplicação cliente servidor com uma aplicação orientada a eventos
 
   
-*  Jhony Wesley Marques                                      :TCC2:Concluído:
+**  Jhony Wesley Marques                                     :TCC2:Concluído:
 - Email: jhonymarques@alunos.utfpr.edu.br
 - Título: Análise do nível de aderência à LGPD no setor público ([[https://repositorio.utfpr.edu.br/jspui/handle/1/30387][link]])
 
