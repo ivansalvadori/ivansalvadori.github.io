@@ -35,6 +35,7 @@
 - Título: Integração de Dados Heterogêneos Governamentais: Implementação de um Data Warehouse
 - Histórico de acompanhamento
   + <2023-09-01 sex> - Definição de plano de atividades
+  + <2023-09-22 sex> - Refinamento da proposta
 
 
 ** Diego Gomes                                        :TCC1:TCC2:EmAndamento:
