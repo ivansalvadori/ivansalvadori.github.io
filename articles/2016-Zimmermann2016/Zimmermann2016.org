@@ -1,5 +1,5 @@
 #+INFOJS_OPT: path:../../HtmlTemplate/ccReport.js
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
+#+HTML_HEAD: <link id="tema" rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
 
 #+TODO: TODO(t) STARTED(s) WAITING(w) | DONE(d) CANCELED(c)
 #+DATE: 2017-02-04

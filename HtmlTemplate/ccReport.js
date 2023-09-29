@@ -8,9 +8,9 @@ $(document).ready(function() {
   //removeSpecialElemets();
   removeNotToSpecialElemets();
   //putTodoTagsOnRight();
-  $("h1").before('<div class="headerDiv"><a id="headerLink" style="border-bottom: none; color:#cb4b16; visited:#cb4b16;" href="https://ivansalvadori.github.io/">ivansalvadori.github.io</a></div> ')
-  $("h1").before('<div class="reportDiv">[Report]</div>')
-  $(".reportDiv").after('<div class="changeFontSizeDiv"><a id="upFontSize" href="#" style=" border-bottom: none;">[+A]</a><a id="downFontSize" href="#" style=" border-bottom: none;">[-A]</a></div>');
+  $("h1").before('<div class="headerDiv" id="headerDiv"><a id="headerLink" style="border-bottom: none; color:#cb4b16; visited:#cb4b16;" href="https://ivansalvadori.github.io/">ivansalvadori.github.io</a></div> ')
+  $("#headerDiv").after('<div class="changeFontSizeDiv" id="div-fonte"><a id="upFontSize" href="#" style=" border-bottom: none;">[+A]</a><a id="downFontSize" href="#" style=" border-bottom: none;">[-A]</a><a id="botao-tema" href="#" style=" border-bottom: none;">[dark-mode]</a></div>');
+  $("#div-fonte").after('<div class="reportDiv">[Report]</div>')  
 
   $("#upFontSize").click(function(){
      increaseFontSize();
@@ -23,6 +23,16 @@ $(document).ready(function() {
   formatFooter();
   setDocumentClass();
   addCopyrights();
+  
+  $("#botao-tema").click(function(){
+	  if($('#botao-tema').text() == "[dark-mode]"){		  
+		document.getElementById("tema").href='../../HtmlTemplate/ccReport-dark.css';
+		$('#botao-tema').text("[white-mode]")
+	  }else{
+		  document.getElementById("tema").href='../../HtmlTemplate/ccReport.css';
+		  $('#botao-tema').text("[dark-mode]")
+	  }
+  });
 
 });
 

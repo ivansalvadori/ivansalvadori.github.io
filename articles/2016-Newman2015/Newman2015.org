@@ -3,7 +3,7 @@
 #+DESCRIPTION: Review
 
 #+INFOJS_OPT: path:../../HtmlTemplate/ccReport.js
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
+#+HTML_HEAD: <link id="tema" rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
 
 #+MACRO: tag @@latex:\hfill{}\textsc{$1}@@ @@html:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="$1">$1</span></span>@@
 

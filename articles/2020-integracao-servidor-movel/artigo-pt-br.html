@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt_BR" xml:lang="pt_BR">
 <head>
-<!-- 27/06/2020 -->
+<!-- 29/09/2023 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Integração de aplicações entre servidores e dispositivos móveis</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Ivan Salvadori" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -161,6 +162,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -177,71 +191,18 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <meta name="docClass" content= "Artigo">
-<link rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
+<link id="tema" rel="stylesheet" type="text/css" href="../../HtmlTemplate/ccReport.css" />
 
-<script type="text/javascript" src="../../HtmlTemplate/ccReport.js">
-/**
- *
- * @source: ../../HtmlTemplate/ccReport.js
- *
- * @licstart  The following is the entire license notice for the
- *  JavaScript code in ../../HtmlTemplate/ccReport.js.
- *
- * Copyright (C) 2012-2018 Free Software Foundation, Inc.
- *
- *
- * The JavaScript code in this tag is free software: you can
- * redistribute it and/or modify it under the terms of the GNU
- * General Public License (GNU GPL) as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option)
- * any later version.  The code is distributed WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
- *
- * As additional permission under GNU GPL version 3 section 7, you
- * may distribute non-source (e.g., minimized or compacted) forms of
- * that code without the copy of the GNU GPL normally required by
- * section 4, provided you include this license notice and a URL
- * through which recipients can access the Corresponding Source.
- *
- * @licend  The above is the entire license notice
- * for the JavaScript code in ../../HtmlTemplate/ccReport.js.
- *
- */
+<script src="../../HtmlTemplate/ccReport.js">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
 </script>
 
-<script type="text/javascript">
-
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-
-<!--/*--><![CDATA[/*><!--*/
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 org_html_manager.set("TOC_DEPTH", "3");
 org_html_manager.set("LINK_HOME", "");
 org_html_manager.set("LINK_UP", "");
@@ -252,67 +213,21 @@ org_html_manager.set("FIXED_TOC", "0");
 org_html_manager.set("TOC", "1");
 org_html_manager.set("VIEW", "info");
 org_html_manager.setup();  // activate after the parameters are set
-/*]]>*///-->
-</script>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Integração de aplicações entre servidores e dispositivos móveis</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>&Iacute;ndice</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge6fd11a">1. Introdução</a></li>
-<li><a href="#orgb9cfc42">2. Conceitos básicos</a></li>
-<li><a href="#orgbc55697">3. Integração Síncrona</a></li>
-<li><a href="#org03454db">4. Integração Assíncrona</a></li>
-<li><a href="#orgdf26bc5">5. Conclusão</a></li>
+<li><a href="#org93599ec">1. Introdução</a></li>
+<li><a href="#org08c96ab">2. Conceitos básicos</a></li>
+<li><a href="#org6b7e0d7">3. Integração Síncrona</a></li>
+<li><a href="#org42560e9">4. Integração Assíncrona</a></li>
+<li><a href="#org4d2a01a">5. Conclusão</a></li>
 </ul>
 </div>
 </div>
@@ -320,8 +235,8 @@ for the JavaScript code in this tag.
 [<a href="artigo-en.html">English</a>]  
 </p>
 
-<div id="outline-container-orge6fd11a" class="outline-2">
-<h2 id="orge6fd11a"><span class="section-number-2">1</span> Introdução</h2>
+<div id="outline-container-org93599ec" class="outline-2">
+<h2 id="org93599ec"><span class="section-number-2">1.</span> Introdução</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Este artigo apresenta as principais formas de integração entre servidores e aplicações executadas dispositivos móveis. 
@@ -333,8 +248,8 @@ São apresentados detalhes sobre  serviços web SOAP e REST para realizar a inte
 </div>
 
 
-<div id="outline-container-orgb9cfc42" class="outline-2">
-<h2 id="orgb9cfc42"><span class="section-number-2">2</span> Conceitos básicos</h2>
+<div id="outline-container-org08c96ab" class="outline-2">
+<h2 id="org08c96ab"><span class="section-number-2">2.</span> Conceitos básicos</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 O primeiro conceito a ser definido é o de servidor.
@@ -386,8 +301,8 @@ Neste texto, são consideradas as integrações síncronas e assíncronas.
 </div>
 </div>
 
-<div id="outline-container-orgbc55697" class="outline-2">
-<h2 id="orgbc55697"><span class="section-number-2">3</span> Integração Síncrona</h2>
+<div id="outline-container-org6b7e0d7" class="outline-2">
+<h2 id="org6b7e0d7"><span class="section-number-2">3.</span> Integração Síncrona</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Na integração síncrona, uma aplicação cliente envia uma requisição para um servidor e aguarda uma resposta acerca da funcionalidade desejada.
@@ -460,8 +375,8 @@ O envio de todas as informações necessárias para a execução das requisiçõ
 </div>
 </div>
 
-<div id="outline-container-org03454db" class="outline-2">
-<h2 id="org03454db"><span class="section-number-2">4</span> Integração Assíncrona</h2>
+<div id="outline-container-org42560e9" class="outline-2">
+<h2 id="org42560e9"><span class="section-number-2">4.</span> Integração Assíncrona</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 O modelo de integração síncrona, anteriormente apresentado, segue o modelo cliente/servidor, onde a comunicação tem início na requisição do cliente e fim na resposta do servidor.
@@ -491,8 +406,8 @@ Tópicos implementam o padrão <i>Publish-Subscribe</i> que permite o envio de u
 </div>
 
 
-<div id="outline-container-orgdf26bc5" class="outline-2">
-<h2 id="orgdf26bc5"><span class="section-number-2">5</span> Conclusão</h2>
+<div id="outline-container-org4d2a01a" class="outline-2">
+<h2 id="org4d2a01a"><span class="section-number-2">5.</span> Conclusão</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Este artigo apresentou as duas principais formas de integração entre aplicativos e servidor: integração síncrona e assíncrona.
@@ -527,8 +442,8 @@ Por fim, filas podem ser utilizadas para balancear a carga entre os componentes 
 <div id="postamble" class="status">
 <p class="date">Data: 04/06/2020</p>
 <p class="author">Autor: Ivan Salvadori</p>
-<p class="date">Created: 27/06/2020</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Criado em: 29/09/2023</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
