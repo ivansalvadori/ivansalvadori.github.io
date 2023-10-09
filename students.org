@@ -19,6 +19,7 @@
 - Título: Não definido
 - Histórico de acompanhamento
   + <2023-09-15 sex> - Definição do escopo do trabalho
+  + <2023-10-06 sex> - Refinamento do texto inicial
   
   
  
@@ -27,6 +28,7 @@
 - Título: Integração dos sistemas CSV2RDF e SDD-MS através de uma infraestrutura para importação de Dados CSV e Geração automática de WebServices Semânticos
 - Histórico de acompanhamento
   + <2023-08-30 qua> - Definição de plano de atividades
+  + <2023-10-04 qua> - Acompanhamento do desenvolvimento
 
 
 
@@ -36,6 +38,7 @@
 - Histórico de acompanhamento
   + <2023-09-01 sex> - Definição de plano de atividades
   + <2023-09-22 sex> - Refinamento da proposta
+  + <2023-10-06 sex> - Ajustes no escopo
 
 
 ** Diego Gomes                                        :TCC1:TCC2:EmAndamento:
