@@ -4,6 +4,9 @@
 * Students
 
 * Acompanhamento (2023-2)
+
+** Segundas-feiras
+  - 17h às 18h - Matheus da Costa Varela 
 ** Quartas-feiras:
  - 17h às 18h - Diego Gomes
  - 18h às 19h - Matheus Augusto Condé Dias
@@ -47,9 +50,12 @@
 - Histórico de acompanhamento
   + <2023-08-30 qua> - Definição de plano de atividades
 
-** Matheus da Costa Varela                                 :TCC1:EmAndamento:
+** Matheus da Costa Varela                                 :TCC1:TCC2:EmAndamento:
 - Email: matheusvarela@alunos.utfpr.edu.br
 - Título: Análise comparativa entre uma aplicação cliente servidor com uma aplicação orientada a eventos
+- Histórico de acompanhamento
+  + <2023-10-09 seg> - Definição do cenário de experimentos
+  + <2023-10-16 seg> - Refinamento do cenário de experimentos
 
   
 **  Jhony Wesley Marques                                     :TCC2:Concluído:
