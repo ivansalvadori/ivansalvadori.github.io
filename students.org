@@ -1,61 +1,62 @@
 #+INCLUDE: "header.org"
-#+TAGS: @TCC1 @TCC2 @Concluído @Emandamento
+#+TAGS: @TCC1 @TCC2 @Concluído @Emandamento @Interrompido
 
 * Students
 
-* Acompanhamento (2023-2)
+* Acompanhamento (2024-1)
 
-** Segundas-feiras
-  - 17h às 18h - Matheus da Costa Varela 
+Processo SEI TCC1: 23064.013122/2024-01
+
 ** Quartas-feiras:
- - 17h às 18h - Diego Gomes
- - 18h às 19h - Matheus Augusto Condé Dias
- - 19h às 20h - Disponível
+ - 18h00 às 18h30 - Disponível
+ - 18h30 às 19h00 - Disponível
+ - 19h00 às 19h30 - Disponível
+** Quintas-feiras:
+ - 18h00 às 18h30 - Disponível
+ - 18h30 às 19h00 - Disponível
+ - 19h00 às 19h30 - Disponível   
 ** Sextas-feiras:
- - 17h às 18h - Lucas Felix
- - 18h às 19h - Disponível
- - 21h30 às 22h30 - Gabriel Junior Picagevicz
-   
+ - 17h00 às 17h30 - Disponível
+ - 17h30 às 18h00 - Disponível
+ - 18h00 às 18h30 - Disponível
+    
 
-** Lucas Felix                                             :TCC1:EmAndamento:
-- Email: lucas.felix199948@gmail.com
-- Título: Não definido
-- Histórico de acompanhamento
-  + <2023-09-15 sex> - Definição do escopo do trabalho
-  + <2023-10-06 sex> - Refinamento do texto inicial
+** Paula Cristina hang                                  :TCC1:EmAndamento:
+- Email: paulahang@alunos.utfpr.edu.br
+- Título:
   
-  
+** Emanuelle Machado                                       :TCC1:EmAndamento:
+- Email: emanuellemachado@alunos.utfpr.edu.br
+- Título: 
+
+** Guilherme Baumgratz Spiger               :TCC1:EmAndamento:
+- Email: gspiger@alunos.utfpr.edu.br
+- Título: 
+
+** Lucas Alves Rubira                       :TCC1:EmAndamento:
+- Email: lucasrubira@alunos.utfpr.edu.br
+- Título: 
+
  
-** Matheus Augusto Condé Dias                         :TCC1:TCC2:EmAndamento:
+** Matheus Augusto Condé Dias              :TCC1:TCC2:EmAndamento:
 - Email: mdias.1998@alunos.utfpr.edu.br
 - Título: Integração dos sistemas CSV2RDF e SDD-MS através de uma infraestrutura para importação de Dados CSV e Geração automática de WebServices Semânticos
-- Histórico de acompanhamento
-  + <2023-08-30 qua> - Definição de plano de atividades
-  + <2023-10-04 qua> - Acompanhamento do desenvolvimento
 
-
-
-** Gabriel Junior Picagevicz                          :TCC1:TCC2:EmAndamento:
-- Email: gabrielpicagevicz@alunos.utfpr.edu.br
-- Título: Integração de Dados Heterogêneos Governamentais: Implementação de um Data Warehouse
-- Histórico de acompanhamento
-  + <2023-09-01 sex> - Definição de plano de atividades
-  + <2023-09-22 sex> - Refinamento da proposta
-  + <2023-10-06 sex> - Ajustes no escopo
-
-
-** Diego Gomes                                        :TCC1:TCC2:EmAndamento:
-- Email: diego.gomes87@gmail.com
-- Título: Gamificação no Ensino Remoto de Programação
-- Histórico de acompanhamento
-  + <2023-08-30 qua> - Definição de plano de atividades
-
-** Matheus da Costa Varela                                 :TCC1:TCC2:EmAndamento:
+** Matheus da Costa Varela :TCC1:TCC2:EmAndamento:
 - Email: matheusvarela@alunos.utfpr.edu.br
 - Título: Análise comparativa entre uma aplicação cliente servidor com uma aplicação orientada a eventos
-- Histórico de acompanhamento
-  + <2023-10-09 seg> - Definição do cenário de experimentos
-  + <2023-10-16 seg> - Refinamento do cenário de experimentos
+
+** Lucas Felix :TCC1:TCC2:Interrompido:
+- Email: lucas.felix199948@gmail.com
+- Título: Não definido
+
+** Gabriel Junior Picagevicz                          :TCC1:TCC2:Concluído:
+- Email: gabrielpicagevicz@alunos.utfpr.edu.br
+- Título: Integração de Dados Heterogêneos Governamentais: Implementação de um Data Warehouse
+
+** Diego Gomes                                        :TCC1:TCC2:Concluído:
+- Email: diego.gomes87@gmail.com
+- Título: Gamificação no Ensino Remoto de Programação
 
   
 **  Jhony Wesley Marques                                     :TCC2:Concluído:
