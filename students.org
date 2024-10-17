@@ -3,63 +3,87 @@
 
 * Students
 
-* Acompanhamento (2024-1)
+* Acompanhamento (2024-2)
 
-Processo SEI TCC1: 23064.013122/2024-01
+- Processo SEI TCC1: SEI 23064.044524/2024-49
+- Processo SEI TCC2: SEI 23064.044525/2024-93
 
-** Quartas-feiras:
- - 18h00 às 18h30 - Disponível
- - 18h30 às 19h00 - Disponível
- - 19h00 às 19h30 - Disponível
+** Quartas-feiras: (http://meet.google.com/cdq-xhdh-def)
+ - 16h30 às 17h00 - Emanuelle Machado
+ - 17h30 às 18h00 - Alvaro Barbosa da Silva 
+ - 20h30 às 21h00 - Lucas Felix Vaz (Presencial)
 ** Quintas-feiras:
- - 18h00 às 18h30 - Disponível
- - 18h30 às 19h00 - Disponível
- - 19h00 às 19h30 - Disponível   
-** Sextas-feiras:
- - 17h00 às 17h30 - Disponível
- - 17h30 às 18h00 - Disponível
- - 18h00 às 18h30 - Disponível
+ - 20h30 às 21h00 - Joicimar Fernandes (Presencial)
+** Sextas-feiras: (http://meet.google.com/nmn-hisf-kjr)
+ - 15h00 às 15h30 - Lucas Alves Rubira
+ - 19h00 às 19h30 - Guilherme Baumgratz Spiger
     
 
-** Paula Cristina hang                                  :TCC1:EmAndamento:
+**  Alvaro Barbosa da Silva :TCC1:EmAndamento:
+- Email: alvarobarbosa@alunos.utfpr.edu.br
+- Título:
+- Curso: Tecnologia em Sistemas para Internet
+- Data de defesa:
+ 
+** Paula Cristina hang                                     :TCC1:Interropido:
 - Email: paulahang@alunos.utfpr.edu.br
 - Título:
-  
-** Emanuelle Machado                                       :TCC1:EmAndamento:
+- Curso: Tecnologia em Sistemas para Internet
+- Data de defesa:
+    
+** Emanuelle Machado                                       :TCC1:TCC2:EmAndamento:
 - Email: emanuellemachado@alunos.utfpr.edu.br
 - Título: 
-
-** Guilherme Baumgratz Spiger               :TCC1:EmAndamento:
+- Curso: Tecnologia em Sistemas para Internet
+- Data de defesa: 
+  
+** Guilherme Baumgratz Spiger               :TCC1:TCC2:EmAndamento:
 - Email: gspiger@alunos.utfpr.edu.br
 - Título: 
-
-** Lucas Alves Rubira                       :TCC1:EmAndamento:
+- Curso: Tecnologia em Sistemas para Internet
+- Data de defesa: 
+  
+** Lucas Alves Rubira                       :TCC1:TCC2:EmAndamento:
 - Email: lucasrubira@alunos.utfpr.edu.br
 - Título: 
-
+- Curso: Tecnologia em Sistemas para Internet
+- Data de defesa: 
  
 ** Matheus Augusto Condé Dias              :TCC1:TCC2:EmAndamento:
 - Email: mdias.1998@alunos.utfpr.edu.br
 - Título: Integração dos sistemas CSV2RDF e SDD-MS através de uma infraestrutura para importação de Dados CSV e Geração automática de WebServices Semânticos
+- Curso: Tecnologia em Sistemas para Internet
+- Data de defesa: 
 
-** Matheus da Costa Varela :TCC1:TCC2:EmAndamento:
+** Matheus da Costa Varela :TCC1:TCC2:Interrompido:
 - Email: matheusvarela@alunos.utfpr.edu.br
 - Título: Análise comparativa entre uma aplicação cliente servidor com uma aplicação orientada a eventos
-
-** Lucas Felix :TCC1:TCC2:Interrompido:
+- Curso: Tecnologia em Sistemas para Internet
+- Data de defesa:
+  
+** Lucas Felix :TCC1:TCC2:EmAndamento:
 - Email: lucas.felix199948@gmail.com
 - Título: Não definido
-
+- Curso: Tecnologia em Sistemas para Internet
+- Data de defesa: 
+  
 ** Gabriel Junior Picagevicz                          :TCC1:TCC2:Concluído:
 - Email: gabrielpicagevicz@alunos.utfpr.edu.br
-- Título: Integração de Dados Heterogêneos Governamentais: Implementação de um Data Warehouse
+- Título: Explorando Dados de Roubos e Furtos de Veículos em São Paulo: Uma Abordagem De Integração Com Pentaho, Postgresql, Elasticsearch e Kibana
+- Curso: Tecnologia em Sistemas para Internet
+- Data de defesa: 08/12/2022
 
 ** Diego Gomes                                        :TCC1:TCC2:Concluído:
 - Email: diego.gomes87@gmail.com
 - Título: Gamificação no Ensino Remoto de Programação
-
+- Curso: Tecnologia em Sistemas para Internet
+- Data de defesa: 08/12/2022
   
-**  Jhony Wesley Marques                                     :TCC2:Concluído:
+  
+** Jhony Wesley Marques                                      :TCC2:Concluído:
 - Email: jhonymarques@alunos.utfpr.edu.br
 - Título: Análise do nível de aderência à LGPD no setor público ([[https://repositorio.utfpr.edu.br/jspui/handle/1/30387][link]])
+- Curso: Tecnologia em Sistemas para Internet
+- Data de defesa: 08/12/2022
+
 
