@@ -5,23 +5,12 @@
 
 * Acompanhamento (2024-1)
 
-Processo SEI TCC1: 23064.013122/2024-01
+- Processo SEI TCC1: SEI 23064.044524/2024-49
+- Processo SEI TCC2: SEI 23064.044525/2024-93
 
-** Quartas-feiras:
- - 18h00 às 18h30 - Disponível
- - 18h30 às 19h00 - Disponível
- - 19h00 às 19h30 - Disponível
-** Quintas-feiras:
- - 18h00 às 18h30 - Disponível
- - 18h30 às 19h00 - Disponível
- - 19h00 às 19h30 - Disponível   
-** Sextas-feiras:
- - 17h00 às 17h30 - Disponível
- - 17h30 às 18h00 - Disponível
- - 18h00 às 18h30 - Disponível
-    
+ 
 
-** Paula Cristina hang                                  :TCC1:EmAndamento:
+** Paula Cristina hang                                    :TCC1:EmAndamento:
 - Email: paulahang@alunos.utfpr.edu.br
 - Título:
   
