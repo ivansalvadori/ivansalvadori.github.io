@@ -10,51 +10,50 @@
 
 ** Alvaro Barbosa da Silva                                 :TCC1:EmAndamento:
 - Email: alvarobarbosa@alunos.utfpr.edu.br
-- Título:
+- Título: Paradigmas Arquiteturais de Sistemas Distribuídos (provisório)
 - Curso: Tecnologia em Sistemas para Internet
-- Data de defesa:
+- Data de defesa: -
  
-** Paula Cristina hang                                     :TCC1:Interropido:
+** Paula Cristina Hang                                     :TCC1:Interropido:
 - Email: paulahang@alunos.utfpr.edu.br
-- Título:
+- Título: Segurança de Daods em Big Data
 - Curso: Tecnologia em Sistemas para Internet
-- Data de defesa:
+- Data de defesa: -
     
-** Emanuelle Machado                                       :TCC1:TCC2:EmAndamento:
+** Emanuelle Machado                                       :TCC1:TCC2:Concluído:
 - Email: emanuellemachado@alunos.utfpr.edu.br
-- Título: 
+- Título: Qualidade de Dados e Linked Data: Aprimoramento de Dados Abertos Governamentais 
 - Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: 
+- Data de defesa: 18/02/2025 
   
 ** Guilherme Baumgratz Spiger               :TCC1:TCC2:EmAndamento:
 - Email: gspiger@alunos.utfpr.edu.br
-- Título: 
+- Título: Sistemas de Pesquisa Online (provisório)
 - Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: 
+- Data de defesa: -
   
-** Lucas Alves Rubira                       :TCC1:TCC2:EmAndamento:
+** Lucas Alves Rubira                       :TCC1:TCC2:Concluído
 - Email: lucasrubira@alunos.utfpr.edu.br
-- Título: 
+- Título: Bancos de Dados NoSQL: Vulnerabilidades de Segurança Encontrados no MongoDB
 - Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: 
+- Data de defesa: 19/02/2025
  
-** Matheus Augusto Condé Dias              :TCC1:TCC2:EmAndamento:
+** Matheus Augusto Condé Dias              :TCC1:TCC2:Concluído:
 - Email: mdias.1998@alunos.utfpr.edu.br
-- Título: Integração dos sistemas CSV2RDF e SDD-MS através de uma infraestrutura para importação de Dados CSV e Geração automática de WebServices Semânticos
-- Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: 
+- Título: Sistema Eletrônico de Informações: Um Estudo Sobre a Qualidade de Dados
+- Data de defesa: 21/02/2025
 
 ** Matheus da Costa Varela :TCC1:TCC2:Interrompido:
 - Email: matheusvarela@alunos.utfpr.edu.br
 - Título: Análise comparativa entre uma aplicação cliente servidor com uma aplicação orientada a eventos
 - Curso: Tecnologia em Sistemas para Internet
-- Data de defesa:
+- Data de defesa: -
   
-** Lucas Felix :TCC1:TCC2:EmAndamento:
+** Lucas Felix Vaz                                    :TCC1:TCC2:Concluído:
 - Email: lucas.felix199948@gmail.com
-- Título: Não definido
+- Título: Análise de Qualidade e Visão dos Dados Disponibilizados Sobre Homicídios No Brasil: Um Panorama da Violência
 - Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: 
+- Data de defesa: 18/02/2025
   
 ** Gabriel Junior Picagevicz                          :TCC1:TCC2:Concluído:
 - Email: gabrielpicagevicz@alunos.utfpr.edu.br
