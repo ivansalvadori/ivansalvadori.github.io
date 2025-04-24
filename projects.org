@@ -2,11 +2,12 @@
 
 * Projects 
 
-** csv2rdf
-   [[https://github.com/ivansalvadori/csv2rdf][csv2rdf]] is a tool/library for converting CSV files into RDF triples.
-   
-** TODO Linkedator
-To be published.
+** Assinador Digital de Documentos UTFPR
 
-** TODO DIaaS
-To be published.
+*** Vigência: Maio de 2025 à Maio de 2028
+
+A crescente informatização dos processos empresariais e governamentais demanda mecanismos para garantir a integridade e segurança de documentos digitais.
+Este projeto de extensão busca democratizar a assinatura digital de documentos eletrônicos.
+Para mais informações acesse o [[https://drive.google.com/file/d/15XjRr3lk4ZwtMt9sRiL5Gj0VoAKrjT-f/view?usp=sharing][documento descritivo]] do projeto.
+
+
