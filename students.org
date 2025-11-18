@@ -3,75 +3,54 @@
 
 * Students
 
-* Acompanhamento (2024-2)
-
-- Processo SEI TCC1: SEI 23064.044524/2024-49
-- Processo SEI TCC2: SEI 23064.044525/2024-93
-
-** Alvaro Barbosa da Silva                                 :TCC1:EmAndamento:
-- Email: alvarobarbosa@alunos.utfpr.edu.br
-- Título: Paradigmas Arquiteturais de Sistemas Distribuídos (provisório)
+** Alvaro Barbosa da Silva                                
+- Título: Paradigmas Arquiteturais de Sistemas Distribuídos 
 - Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: -
+- Defesa: 2025
+
+** Guilherme Baumgratz Spiger              
+- Título: Proposta de Uma Arquitetura para um Software de Pesquisa Online Adequado a Lei Geral de Proteção de Dados
+- Curso: Tecnologia em Sistemas para Internet
+- Defesa: 2025
+  
+** Ulisses Meotti              
+- Título: Travelsim: Simulador de Viagens com Dados Reais
+- Curso: Tecnologia em Sistemas para Internet
+- Defesa: 2025
+
+** Emanuelle Machado                                       
+- Título: Qualidade de Dados e Linked Data: Aprimoramento de Dados Abertos Governamentais ([[https://repositorio.utfpr.edu.br/jspui/handle/1/36793][link]])
+- Curso: Tecnologia em Sistemas para Internet
+- Defesa: 2025
+  
+** Lucas Alves Rubira                       
+- Título: Bancos de Dados NoSQL: Vulnerabilidades de Segurança Encontrados no MongoDB ([[https://repositorio.utfpr.edu.br/jspui/handle/1/36794][link]])
+- Curso: Tecnologia em Sistemas para Internet
+- Defesa: 2025
  
-** Paula Cristina Hang                                     :TCC1:Interropido:
-- Email: paulahang@alunos.utfpr.edu.br
-- Título: Segurança de Daods em Big Data
+** Matheus Augusto Condé Dias             
+- Título: Sistema Eletrônico de Informações: Um Estudo Sobre a Qualidade de Dados ([[https://repositorio.utfpr.edu.br/jspui/handle/1/36820][link]])
 - Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: -
+- Defesa: 2025
+  
+** Lucas Felix Vaz                                   
+- Título: Análise de Qualidade e Visão dos Dados Disponibilizados Sobre Homicídios No Brasil: Um Panorama da Violência ([[https://repositorio.utfpr.edu.br/jspui/handle/1/36792][link]])
+- Curso: Tecnologia em Sistemas para Internet
+- Defesa: 2025
+  
+** Gabriel Junior Picagevicz                         
+- Título: Explorando Dados de Roubos e Furtos de Veículos em São Paulo: Uma Abordagem De Integração Com Pentaho, Postgresql, Elasticsearch e Kibana ([[https://repositorio.utfpr.edu.br/jspui/handle/1/36818][link]])
+- Curso: Tecnologia em Sistemas para Internet
+- Defesa: 2023
+
+** Diego Gomes                                       
+- Título: Gamificação no Ensino Remoto de Programação ([[https://repositorio.utfpr.edu.br/jspui/handle/1/36758][link]])
+- Curso: Tecnologia em Sistemas para Internet
+- Defesa: 2023
     
-** Emanuelle Machado                                       :TCC1:TCC2:Concluído:
-- Email: emanuellemachado@alunos.utfpr.edu.br
-- Título: Qualidade de Dados e Linked Data: Aprimoramento de Dados Abertos Governamentais 
-- Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: 18/02/2025 
-  
-** Guilherme Baumgratz Spiger               :TCC1:TCC2:EmAndamento:
-- Email: gspiger@alunos.utfpr.edu.br
-- Título: Sistemas de Pesquisa Online (provisório)
-- Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: -
-  
-** Lucas Alves Rubira                       :TCC1:TCC2:Concluído
-- Email: lucasrubira@alunos.utfpr.edu.br
-- Título: Bancos de Dados NoSQL: Vulnerabilidades de Segurança Encontrados no MongoDB
-- Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: 19/02/2025
- 
-** Matheus Augusto Condé Dias              :TCC1:TCC2:Concluído:
-- Email: mdias.1998@alunos.utfpr.edu.br
-- Título: Sistema Eletrônico de Informações: Um Estudo Sobre a Qualidade de Dados
-- Data de defesa: 21/02/2025
-
-** Matheus da Costa Varela :TCC1:TCC2:Interrompido:
-- Email: matheusvarela@alunos.utfpr.edu.br
-- Título: Análise comparativa entre uma aplicação cliente servidor com uma aplicação orientada a eventos
-- Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: -
-  
-** Lucas Felix Vaz                                    :TCC1:TCC2:Concluído:
-- Email: lucas.felix199948@gmail.com
-- Título: Análise de Qualidade e Visão dos Dados Disponibilizados Sobre Homicídios No Brasil: Um Panorama da Violência
-- Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: 18/02/2025
-  
-** Gabriel Junior Picagevicz                          :TCC1:TCC2:Concluído:
-- Email: gabrielpicagevicz@alunos.utfpr.edu.br
-- Título: Explorando Dados de Roubos e Furtos de Veículos em São Paulo: Uma Abordagem De Integração Com Pentaho, Postgresql, Elasticsearch e Kibana
-- Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: 08/12/2022
-
-** Diego Gomes                                        :TCC1:TCC2:Concluído:
-- Email: diego.gomes87@gmail.com
-- Título: Gamificação no Ensino Remoto de Programação
-- Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: 08/12/2022
-  
-  
-** Jhony Wesley Marques                                      :TCC2:Concluído:
-- Email: jhonymarques@alunos.utfpr.edu.br
+** Jhony Wesley Marques                                    
 - Título: Análise do nível de aderência à LGPD no setor público ([[https://repositorio.utfpr.edu.br/jspui/handle/1/30387][link]])
 - Curso: Tecnologia em Sistemas para Internet
-- Data de defesa: 08/12/2022
+- Defesa: 2022
 
 
